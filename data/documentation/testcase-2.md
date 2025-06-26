@@ -1,8 +1,8 @@
 
-# Hard conflict detected. Permission vs Prohibition using rdfs:subClassOf
+# Hard conflict detected. Permission vs Prohibition odrl:read as subclass of odrl:use
 **Source**: https://github.com/SolidLabResearch/ODRL-Test-Conflicts/
-> Alice is permitted to (special) read resource X. Where special read a type of read.
-Alice is prohibited to read resource X.
+> Alice is permitted to read resource X.
+Alice is prohibited to use resource X.
 ## ODRL Policy
 ```ttl
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
@@ -17,26 +17,23 @@ Alice is prohibited to read resource X.
 
 <urn:uuid:c57a99b7-2ccf-44ad-8655-b11ed0020460> a odrl:Set;
     odrl:uid <urn:uuid:c57a99b7-2ccf-44ad-8655-b11ed0020460>;
-    odrl:description "Alice is permitted to (special) read resource X. Where special read a type of read.";
+    odrl:description "Alice is permitted to read resource X.";
     odrl:source <https://github.com/SolidLabResearch/ODRL-Test-Conflicts/>;
     odrl:permission <urn:uuid:38d1cdb6-db3a-45d3-93b1-9d54776df02a>.
 <urn:uuid:38d1cdb6-db3a-45d3-93b1-9d54776df02a> a odrl:Permission;
     odrl:assignee ex:alice;
-    odrl:action odrl:SpecialRead;
+    odrl:action odrl:read;
     odrl:target ex:resourceX.
 
 <urn:uuid:c57a99b7-2ccf-44ad-8655-b11ed0020460> a odrl:Set;
     odrl:uid <urn:uuid:c57a99b7-2ccf-44ad-8655-b11ed0020460>;
-    odrl:description "Alice is prohibited to read resource X.";
+    odrl:description "Alice is prohibited to use resource X.";
     odrl:source <https://github.com/SolidLabResearch/ODRL-Test-Conflicts/>;
     odrl:prohibition <urn:uuid:38d1cdb6-db3a-45d3-93b1-9d54776df02a>.
 <urn:uuid:38d1cdb6-db3a-45d3-93b1-9d54776df02a> a odrl:Prohibition;
     odrl:assignee ex:alice;
-    odrl:action odrl:read;
+    odrl:action odrl:use;
     odrl:target ex:resourceX.
-
-# Create a SpecialRead as a type of odrl:read
-ex:SpecialRead rdfs:subClassOf odrl:read .
 ```
 ## ODRL Request
 ## State of the world
@@ -52,7 +49,7 @@ ex:SpecialRead rdfs:subClassOf odrl:read .
 @prefix report: <https://w3id.org/force/compliance-report#>.
 
 <urn:uuid:afd905f4-6d20-4c59-a628-5b519e940d26> a ex:TestCase, ex:ConflictTestCase;
-    dct:title "Hard conflict detected. Permission vs Prohibition using rdfs:subClassOf";
+    dct:title "Hard conflict detected. Permission vs Prohibition odrl:read as subclass of odrl:use";
     report:policy <urn:uuid:c57a99b7-2ccf-44ad-8655-b11ed0020460>;
     ex:expectedReport <urn:uuid:c9d7910a-7df8-4609-a991-1db1f4825c43>.
 <urn:uuid:c9d7910a-7df8-4609-a991-1db1f4825c43> a report:PolicyReport, report:ConflictPolicyReport;
