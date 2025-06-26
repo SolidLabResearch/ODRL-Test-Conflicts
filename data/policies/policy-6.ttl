@@ -7,6 +7,9 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix report: <https://w3id.org/force/compliance-report#>.
 
+<> a ex:PolicyDemo;
+    dct:title "Hard conflict detected. Permission vs Prohibition in collection and partOf.".
+
 <urn:uuid:aad03f3f-8b8b-467c-b95b-342b677d3364> a odrl:Set;
     odrl:uid <urn:uuid:aad03f3f-8b8b-467c-b95b-342b677d3364>;
     odrl:description "Alice is allowed to read collection X.";

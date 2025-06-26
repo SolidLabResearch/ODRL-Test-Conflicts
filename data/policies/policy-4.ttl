@@ -7,6 +7,9 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix report: <https://w3id.org/force/compliance-report#>.
 
+<> a ex:PolicyDemo;
+    dct:title "Hard conflict detected. A duty which is prohibited to be fulfilled.".
+
 <urn:uuid:c84c52ba-7326-49a0-9ed5-7312441c0dff> a odrl:Set;
     odrl:uid <urn:uuid:c84c52ba-7326-49a0-9ed5-7312441c0dff>;
     odrl:description "Alice is permitted to use resource X if she signs a contract with Bob.";

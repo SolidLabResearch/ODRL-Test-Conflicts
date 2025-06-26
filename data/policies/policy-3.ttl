@@ -7,6 +7,9 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix report: <https://w3id.org/force/compliance-report#>.
 
+<> a ex:PolicyDemo;
+    dct:title "Hard conflict detected. Obligation vs Prohibition.".
+
 <urn:uuid:e25f27b1-5421-444e-b897-6b4bea85ae7c> a odrl:Set;
     odrl:uid <urn:uuid:e25f27b1-5421-444e-b897-6b4bea85ae7c>;
     odrl:description "Alice has the obligation to read resource X.";

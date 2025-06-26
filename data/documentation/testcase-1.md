@@ -3,6 +3,7 @@
 **Source**: https://github.com/SolidLabResearch/ODRL-Test-Conflicts/
 > Alice is permitted to read resource X
 Alice is prohibited to read resource X
+
 ## ODRL Policy
 ```ttl
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
@@ -13,6 +14,9 @@ Alice is prohibited to read resource X
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix report: <https://w3id.org/force/compliance-report#>.
+
+<> a ex:PolicyDemo;
+    dct:title "Hard conflict detected. Permission vs Prohibition.".
 
 <urn:uuid:d9e83b91-d274-4305-82d5-f96d951dc60f> a odrl:Set;
     odrl:uid <urn:uuid:d9e83b91-d274-4305-82d5-f96d951dc60f>;
@@ -47,17 +51,15 @@ Alice is prohibited to read resource X
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix report: <https://w3id.org/force/compliance-report#>.
 
-<urn:uuid:2a64f80b-df89-45c3-bf93-9d5049c5cc8e> a ex:TestCase, ex:ConflictTestCase;
+<urn:uuid:f4a401c8-8f37-49d8-8243-2bd4b68b1332> a ex:TestCase, ex:ConflictTestCase;
     dct:title "Hard conflict detected. Permission vs Prohibition.";
     report:policy <urn:uuid:d9e83b91-d274-4305-82d5-f96d951dc60f>, <urn:uuid:6ccb9180-f9e4-42b9-9473-9601cf4a037c>;
-    ex:expectedReport <urn:uuid:bd653b47-f688-45ff-af3e-a520c5312f08>.
-<urn:uuid:bd653b47-f688-45ff-af3e-a520c5312f08> a report:PolicyReport, report:ConflictPolicyReport;
-    dct:created "2025-06-26T10:36:32.563Z"^^xsd:dateTime;
-    report:ruleReport <urn:uuid:e0aa250f-9c73-4978-9635-1ef5aba5112a>.
-<urn:uuid:e0aa250f-9c73-4978-9635-1ef5aba5112a> a report:ConflictReport;
+    ex:expectedReport <urn:uuid:759a7511-5b04-4df5-9192-cfb196967897>.
+<urn:uuid:759a7511-5b04-4df5-9192-cfb196967897> a report:PolicyReport, report:ConflictPolicyReport;
+    dct:created "2025-06-26T15:53:02.852Z"^^xsd:dateTime;
+    report:ruleReport <urn:uuid:f7ee1209-a802-43d0-ab90-9ad4d16389aa>.
+<urn:uuid:f7ee1209-a802-43d0-ab90-9ad4d16389aa> a report:Report, report:ConflictReport;
     report:attemptState report:Attempted;
     report:activationState report:Conflict.
 
-
 ```
-

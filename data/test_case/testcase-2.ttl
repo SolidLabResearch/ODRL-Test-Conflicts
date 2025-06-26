@@ -7,14 +7,13 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix report: <https://w3id.org/force/compliance-report#>.
 
-<urn:uuid:afd905f4-6d20-4c59-a628-5b519e940d26> a ex:TestCase, ex:ConflictTestCase;
+<urn:uuid:146f49cb-a574-4737-b530-c9a27b80a10c> a ex:TestCase, ex:ConflictTestCase;
     dct:title "Hard conflict detected. Permission vs Prohibition odrl:read as subclass of odrl:use";
     report:policy <urn:uuid:c57a99b7-2ccf-44ad-8655-b11ed0020460>;
-    ex:expectedReport <urn:uuid:c9d7910a-7df8-4609-a991-1db1f4825c43>.
-<urn:uuid:c9d7910a-7df8-4609-a991-1db1f4825c43> a report:PolicyReport, report:ConflictPolicyReport;
-    dct:created "2025-06-26T11:32:53.576Z"^^xsd:dateTime;
-    report:ruleReport <urn:uuid:160f218b-0c71-44e2-a45b-73b41ebda7f3>.
-<urn:uuid:160f218b-0c71-44e2-a45b-73b41ebda7f3> a report:ConflictReport;
+    ex:expectedReport <urn:uuid:332f463d-3734-4998-960e-456a0f83efdc>.
+<urn:uuid:332f463d-3734-4998-960e-456a0f83efdc> a report:PolicyReport, report:ConflictPolicyReport;
+    dct:created "2025-06-26T15:53:03.947Z"^^xsd:dateTime;
+    report:ruleReport <urn:uuid:9022ae7e-33a1-41ac-bd77-2937d3859712>.
+<urn:uuid:9022ae7e-33a1-41ac-bd77-2937d3859712> a report:Report, report:ConflictReport;
     report:attemptState report:Attempted;
     report:activationState report:Conflict.
-
