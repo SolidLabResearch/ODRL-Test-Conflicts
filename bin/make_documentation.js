@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 const QueryEngine = require('@comunica/query-sparql-file').QueryEngine;
 const myEngine = new QueryEngine();
-const SOURCE = "https://github.com/SolidLabResearch/ODRL-Test-Suite/";
+const SOURCE = "https://github.com/SolidLabResearch/ODRL-Test-Conflicts/";
 const fs = require('fs');
 
 main();

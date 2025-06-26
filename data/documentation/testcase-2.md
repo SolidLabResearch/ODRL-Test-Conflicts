@@ -1,6 +1,6 @@
 
 # Hard conflict detected. Permission vs Prohibition using rdfs:subClassOf
-**Source**: https://github.com/SolidLabResearch/ODRL-Test-Suite/
+**Source**: https://github.com/SolidLabResearch/ODRL-Test-Conflicts/
 > Alice is permitted to (special) read resource X. Where special read a type of read.
 Alice is prohibited to read resource X.
 ## ODRL Policy
@@ -18,7 +18,7 @@ Alice is prohibited to read resource X.
 <urn:uuid:c57a99b7-2ccf-44ad-8655-b11ed0020460> a odrl:Set;
     odrl:uid <urn:uuid:c57a99b7-2ccf-44ad-8655-b11ed0020460>;
     odrl:description "Alice is permitted to (special) read resource X. Where special read a type of read.";
-    odrl:source <https://github.com/SolidLabResearch/ODRL-Test-Suite/>;
+    odrl:source <https://github.com/SolidLabResearch/ODRL-Test-Conflicts/>;
     odrl:permission <urn:uuid:38d1cdb6-db3a-45d3-93b1-9d54776df02a>.
 <urn:uuid:38d1cdb6-db3a-45d3-93b1-9d54776df02a> a odrl:Permission;
     odrl:assignee ex:alice;
@@ -28,7 +28,7 @@ Alice is prohibited to read resource X.
 <urn:uuid:c57a99b7-2ccf-44ad-8655-b11ed0020460> a odrl:Set;
     odrl:uid <urn:uuid:c57a99b7-2ccf-44ad-8655-b11ed0020460>;
     odrl:description "Alice is prohibited to read resource X.";
-    odrl:source <https://github.com/SolidLabResearch/ODRL-Test-Suite/>;
+    odrl:source <https://github.com/SolidLabResearch/ODRL-Test-Conflicts/>;
     odrl:prohibition <urn:uuid:38d1cdb6-db3a-45d3-93b1-9d54776df02a>.
 <urn:uuid:38d1cdb6-db3a-45d3-93b1-9d54776df02a> a odrl:Prohibition;
     odrl:assignee ex:alice;

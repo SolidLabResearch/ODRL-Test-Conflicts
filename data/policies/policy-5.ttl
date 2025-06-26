@@ -10,7 +10,7 @@
 <urn:uuid:7087a379-d4ca-430f-b4d4-c17c53ab3c24> a odrl:Set;
     odrl:uid <urn:uuid:7087a379-d4ca-430f-b4d4-c17c53ab3c24>;
     odrl:description "Alice is permitted to read resource X when her age is 18.";
-    odrl:source <https://github.com/SolidLabResearch/ODRL-Test-Suite/>;
+    odrl:source <https://github.com/SolidLabResearch/ODRL-Test-Conflicts/>;
     odrl:permission <urn:uuid:c72be35e-dd6f-463e-bf37-ef95d0308d26>.
 <urn:uuid:c72be35e-dd6f-463e-bf37-ef95d0308d26> a odrl:Permission;
     odrl:assignee ex:alice;
@@ -25,7 +25,7 @@
 <urn:uuid:6116a93f-cbeb-4d5c-bcde-8f57320d48db> a odrl:Set;
     odrl:uid <urn:uuid:6116a93f-cbeb-4d5c-bcde-8f57320d48db>;
     odrl:description "Alice is prohibited to read resource X when her age is 18.";
-    odrl:source <https://github.com/SolidLabResearch/ODRL-Test-Suite/>;
+    odrl:source <https://github.com/SolidLabResearch/ODRL-Test-Conflicts/>;
     odrl:permission <urn:uuid:a62986fb-a654-4428-8cfc-1af2d67c94c6>.
 <urn:uuid:a62986fb-a654-4428-8cfc-1af2d67c94c6> a odrl:Permission;
     odrl:assignee ex:alice;

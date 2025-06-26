@@ -10,7 +10,7 @@
 <urn:uuid:e25f27b1-5421-444e-b897-6b4bea85ae7c> a odrl:Set;
     odrl:uid <urn:uuid:e25f27b1-5421-444e-b897-6b4bea85ae7c>;
     odrl:description "Alice has the obligation to read resource X.";
-    odrl:source <https://github.com/SolidLabResearch/ODRL-Test-Suite/>;
+    odrl:source <https://github.com/SolidLabResearch/ODRL-Test-Conflicts/>;
     odrl:obligation <urn:uuid:1190268c-5e4d-483d-ad79-6f3ca0c0a035>.
 <urn:uuid:1190268c-5e4d-483d-ad79-6f3ca0c0a035> a odrl:Duty;
     odrl:assignee ex:alice;
@@ -20,7 +20,7 @@
 <urn:uuid:1d2c33dc-0939-46a6-9452-36981342add6> a odrl:Set;
     odrl:uid <urn:uuid:1d2c33dc-0939-46a6-9452-36981342add6>;
     odrl:description "Alice is prohibited to read resource X.";
-    odrl:source <https://github.com/SolidLabResearch/ODRL-Test-Suite/>;
+    odrl:source <https://github.com/SolidLabResearch/ODRL-Test-Conflicts/>;
     odrl:prohibition <urn:uuid:8836cb6b-8c2f-47cf-b820-58292dee18df>.
 <urn:uuid:8836cb6b-8c2f-47cf-b820-58292dee18df> a odrl:Prohibition;
     odrl:assignee ex:alice;

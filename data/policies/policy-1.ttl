@@ -10,7 +10,7 @@
 <urn:uuid:d9e83b91-d274-4305-82d5-f96d951dc60f> a odrl:Set;
     odrl:uid <urn:uuid:d9e83b91-d274-4305-82d5-f96d951dc60f>;
     odrl:description "Alice is permitted to read resource X";
-    odrl:source <https://github.com/SolidLabResearch/ODRL-Test-Suite/>;
+    odrl:source <https://github.com/SolidLabResearch/ODRL-Test-Conflicts/>;
     odrl:permission <urn:uuid:3dc0814a-f626-491f-86eb-d10bec83a0f8>.
 <urn:uuid:3dc0814a-f626-491f-86eb-d10bec83a0f8> a odrl:Permission;
     odrl:assignee ex:alice;
@@ -20,7 +20,7 @@
 <urn:uuid:6ccb9180-f9e4-42b9-9473-9601cf4a037c> a odrl:Set;
     odrl:uid <urn:uuid:6ccb9180-f9e4-42b9-9473-9601cf4a037c>;
     odrl:description "Alice is prohibited to read resource X";
-    odrl:source <https://github.com/SolidLabResearch/ODRL-Test-Suite/>;
+    odrl:source <https://github.com/SolidLabResearch/ODRL-Test-Conflicts/>;
     odrl:prohibition <urn:uuid:a933af56-7977-4970-a08b-3818430470a5>.
 <urn:uuid:a933af56-7977-4970-a08b-3818430470a5> a odrl:Prohibition;
     odrl:assignee ex:alice;

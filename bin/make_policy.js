@@ -4,7 +4,7 @@ const N3 = require('n3');
 const { v4: uuidv4 } = require('uuid');
 const { DataFactory } = N3;
 const { namedNode, literal, quad } = DataFactory;
-const SOURCE = "https://github.com/SolidLabResearch/ODRL-Test-Suite/";
+const SOURCE = "https://github.com/SolidLabResearch/ODRL-Test-Conflicts/";
 const NS = { 
     rdf: 'http://www.w3.org/1999/02/22-rdf-syntax-ns#' ,
     odrl: 'http://www.w3.org/ns/odrl/2/' ,

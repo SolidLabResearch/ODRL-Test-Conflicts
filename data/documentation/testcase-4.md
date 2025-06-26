@@ -1,6 +1,6 @@
 
 # Hard conflict detected. A duty which is prohibited to be fulfilled.
-**Source**: https://github.com/SolidLabResearch/ODRL-Test-Suite/
+**Source**: https://github.com/SolidLabResearch/ODRL-Test-Conflicts/
 > Alice is permitted to use resource X if she signs a contract with Bob.
 Alice is prohibited to sign Bob's contract.
 ## ODRL Policy
@@ -17,7 +17,7 @@ Alice is prohibited to sign Bob's contract.
 <urn:uuid:c84c52ba-7326-49a0-9ed5-7312441c0dff> a odrl:Set;
     odrl:uid <urn:uuid:c84c52ba-7326-49a0-9ed5-7312441c0dff>;
     odrl:description "Alice is permitted to use resource X if she signs a contract with Bob.";
-    odrl:source <https://github.com/SolidLabResearch/ODRL-Test-Suite/>;
+    odrl:source <https://github.com/SolidLabResearch/ODRL-Test-Conflicts/>;
     odrl:permission <urn:uuid:799f648d-b60f-4c80-85ce-cb8fc1561ed4>.
 <urn:uuid:799f648d-b60f-4c80-85ce-cb8fc1561ed4> a odrl:Permission;
     odrl:assignee ex:alice;
@@ -33,7 +33,7 @@ Alice is prohibited to sign Bob's contract.
 <urn:uuid:21db7041-fc81-4d4e-aabc-90c594afcaf8> a odrl:Set;
     odrl:uid <urn:uuid:21db7041-fc81-4d4e-aabc-90c594afcaf8>;
     odrl:description "Alice is prohibited to sign Bob's contract.";
-    odrl:source <https://github.com/SolidLabResearch/ODRL-Test-Suite/>;
+    odrl:source <https://github.com/SolidLabResearch/ODRL-Test-Conflicts/>;
     odrl:prohibition <urn:uuid:4051bdd0-adad-4eb3-bedd-c249f6b5d2a3>.
 <urn:uuid:4051bdd0-adad-4eb3-bedd-c249f6b5d2a3> a odrl:Prohibition;
     odrl:assignee ex:alice;
