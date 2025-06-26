@@ -1,5 +1,5 @@
 
-# Hard conflict detected. Permision vs Prohibition in overlapping collections
+# Hard conflict detected. Permission vs Prohibition in overlapping collections
 **Source**: https://github.com/SolidLabResearch/ODRL-Test-Conflicts/
 > Alice is allowed to read collection X.
 Alice is prohibited to read collection Y.
@@ -68,7 +68,7 @@ ex:document1 a dct:Document;
 @prefix report: <https://w3id.org/force/compliance-report#>.
 
 <urn:uuid:d0c1a854-191a-4340-9c3c-b211d15abd1e> a ex:TestCase, ex:ConflictTestCase;
-    dct:title "Hard conflict detected. Permision vs Prohibition in overlapping collections";
+    dct:title "Hard conflict detected. Permission vs Prohibition in overlapping collections";
     report:policy <urn:uuid:37cfd244-4f7e-407e-8df1-34f4024f2040>, <urn:uuid:a740f9d0-1776-483a-a308-61e415261851>;
     ex:expectedReport <urn:uuid:7d2e2bdc-cfc8-4f70-a3b9-4022c81db31b>.
 <urn:uuid:7d2e2bdc-cfc8-4f70-a3b9-4022c81db31b> a report:PolicyReport, report:ConflictPolicyReport;
