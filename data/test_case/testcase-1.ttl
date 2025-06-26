@@ -8,7 +8,7 @@
 @prefix report: <https://w3id.org/force/compliance-report#>.
 
 <urn:uuid:2a64f80b-df89-45c3-bf93-9d5049c5cc8e> a ex:TestCase, ex:ConflictTestCase;
-    dct:title "Hard conflict detected.";
+    dct:title "Hard conflict detected. Permission vs Prohibition.";
     report:policy <urn:uuid:d9e83b91-d274-4305-82d5-f96d951dc60f>, <urn:uuid:6ccb9180-f9e4-42b9-9473-9601cf4a037c>;
     ex:expectedReport <urn:uuid:bd653b47-f688-45ff-af3e-a520c5312f08>.
 <urn:uuid:bd653b47-f688-45ff-af3e-a520c5312f08> a report:PolicyReport, report:ConflictPolicyReport;
