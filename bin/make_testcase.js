@@ -4,7 +4,6 @@ const path = require('path');
 const { policyFileMetadata } = require('../lib/util');
 const { makeTestCase } = require("../lib/util");
 
-const SOURCE = "https://github.com/SolidLabResearch/ODRL-Test-Conflicts/";
 const files = process.argv.splice(2);
 
 if (files.length != 1) {
@@ -30,8 +29,8 @@ async function main(policyFile) {
     const docFile = `data/documentation/testcase${policy_name}`.replaceAll('\.ttl','.md');
     const documentation = `
 # ${policy_metadata['title']}
-**Source**: ${SOURCE}
-> ${policy_metadata['description']}
+${policy_metadata['description']}
+> ${policy_metadata['policyDescription']}
 ## ODRL Policy
 \`\`\`ttl
 ${policyText}

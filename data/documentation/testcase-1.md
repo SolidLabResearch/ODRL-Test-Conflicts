@@ -1,6 +1,6 @@
 
-# Hard conflict detected. Permission vs Prohibition.
-**Source**: https://github.com/SolidLabResearch/ODRL-Test-Conflicts/
+# Hard conflict detected.
+Permission vs Prohibition.
 > Alice is permitted to read resource X
 Alice is prohibited to read resource X
 
@@ -16,7 +16,8 @@ Alice is prohibited to read resource X
 @prefix report: <https://w3id.org/force/compliance-report#>.
 
 <> a ex:PolicyDemo;
-    dct:title "Hard conflict detected. Permission vs Prohibition.".
+    dct:title "Hard conflict detected.";
+    dct:description "Permission vs Prohibition.".
 
 <urn:uuid:d9e83b91-d274-4305-82d5-f96d951dc60f> a odrl:Set;
     odrl:uid <urn:uuid:d9e83b91-d274-4305-82d5-f96d951dc60f>;
@@ -51,14 +52,14 @@ Alice is prohibited to read resource X
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix report: <https://w3id.org/force/compliance-report#>.
 
-<urn:uuid:f4a401c8-8f37-49d8-8243-2bd4b68b1332> a ex:TestCase, ex:ConflictTestCase;
-    dct:title "Hard conflict detected. Permission vs Prohibition.";
+<urn:uuid:b1a008b5-ded4-4b76-ba59-38bedc7d3f09> a ex:TestCase, ex:ConflictTestCase;
+    dct:title "Hard conflict detected.";
     report:policy <urn:uuid:d9e83b91-d274-4305-82d5-f96d951dc60f>, <urn:uuid:6ccb9180-f9e4-42b9-9473-9601cf4a037c>;
-    ex:expectedReport <urn:uuid:759a7511-5b04-4df5-9192-cfb196967897>.
-<urn:uuid:759a7511-5b04-4df5-9192-cfb196967897> a report:PolicyReport, report:ConflictPolicyReport;
-    dct:created "2025-06-26T15:53:02.852Z"^^xsd:dateTime;
-    report:ruleReport <urn:uuid:f7ee1209-a802-43d0-ab90-9ad4d16389aa>.
-<urn:uuid:f7ee1209-a802-43d0-ab90-9ad4d16389aa> a report:Report, report:ConflictReport;
+    ex:expectedReport <urn:uuid:b8c20042-5140-4bf4-b5d8-1ad7a1dc17d5>.
+<urn:uuid:b8c20042-5140-4bf4-b5d8-1ad7a1dc17d5> a report:PolicyReport, report:ConflictPolicyReport;
+    dct:created "2025-06-26T16:03:38.086Z"^^xsd:dateTime;
+    report:ruleReport <urn:uuid:c859fb36-8278-43d2-b808-7e70e4919c75>.
+<urn:uuid:c859fb36-8278-43d2-b808-7e70e4919c75> a report:Report, report:ConflictReport;
     report:attemptState report:Attempted;
     report:activationState report:Conflict.
 

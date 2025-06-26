@@ -7,13 +7,13 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix report: <https://w3id.org/force/compliance-report#>.
 
-<urn:uuid:7dce4f28-93e3-4171-a595-0b209b5636e1> a ex:TestCase, ex:ConflictTestCase;
-    dct:title "Hard conflict detected. Obligation vs Prohibition.";
+<urn:uuid:4ab221fe-f52b-48ec-8a64-d9be45516be0> a ex:TestCase, ex:ConflictTestCase;
+    dct:title "Hard conflict detected.";
     report:policy <urn:uuid:e25f27b1-5421-444e-b897-6b4bea85ae7c>, <urn:uuid:1d2c33dc-0939-46a6-9452-36981342add6>;
-    ex:expectedReport <urn:uuid:319c5331-a94b-455e-affe-55fc11e6aacc>.
-<urn:uuid:319c5331-a94b-455e-affe-55fc11e6aacc> a report:PolicyReport, report:ConflictPolicyReport;
-    dct:created "2025-06-26T15:53:05.042Z"^^xsd:dateTime;
-    report:ruleReport <urn:uuid:851a144c-54f7-44d3-b137-3fe1d73c0537>.
-<urn:uuid:851a144c-54f7-44d3-b137-3fe1d73c0537> a report:Report, report:ConflictReport;
+    ex:expectedReport <urn:uuid:7c329c51-af93-4784-9a28-e7aa2ad42088>.
+<urn:uuid:7c329c51-af93-4784-9a28-e7aa2ad42088> a report:PolicyReport, report:ConflictPolicyReport;
+    dct:created "2025-06-26T16:03:40.357Z"^^xsd:dateTime;
+    report:ruleReport <urn:uuid:0c999d5d-68e0-4655-bad5-28b790732020>.
+<urn:uuid:0c999d5d-68e0-4655-bad5-28b790732020> a report:Report, report:ConflictReport;
     report:attemptState report:Attempted;
     report:activationState report:Conflict.

@@ -1,6 +1,6 @@
 
-# Hard conflict detected. Permission vs Prohibition in overlapping collections
-**Source**: https://github.com/SolidLabResearch/ODRL-Test-Conflicts/
+# Hard conflict detected.
+Permission vs Prohibition in overlapping collections.
 > Alice is allowed to read collection X.
 Alice is prohibited to read collection Y.
 
@@ -16,8 +16,9 @@ Alice is prohibited to read collection Y.
 @prefix report: <https://w3id.org/force/compliance-report#>.
 
 <> a ex:PolicyDemo;
-    dct:title "Hard conflict detected. Permission vs Prohibition in overlapping collections".
-
+    dct:title "Hard conflict detected.";
+    dct:description "Permission vs Prohibition in overlapping collections.".
+    
 <urn:uuid:37cfd244-4f7e-407e-8df1-34f4024f2040> a odrl:Set;
     odrl:uid <urn:uuid:37cfd244-4f7e-407e-8df1-34f4024f2040>;
     odrl:description "Alice is allowed to read collection X.";
@@ -71,14 +72,14 @@ ex:document1 a dct:Document;
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix report: <https://w3id.org/force/compliance-report#>.
 
-<urn:uuid:ddd65f25-49cf-47ee-8e20-60793495c874> a ex:TestCase, ex:ConflictTestCase;
-    dct:title "Hard conflict detected. Permission vs Prohibition in overlapping collections";
+<urn:uuid:101f40e2-3ba9-4bf3-986b-b2f4cb8e9840> a ex:TestCase, ex:ConflictTestCase;
+    dct:title "Hard conflict detected.";
     report:policy <urn:uuid:37cfd244-4f7e-407e-8df1-34f4024f2040>, <urn:uuid:a740f9d0-1776-483a-a308-61e415261851>;
-    ex:expectedReport <urn:uuid:e000fb19-26e4-4d57-bb08-af0358201532>.
-<urn:uuid:e000fb19-26e4-4d57-bb08-af0358201532> a report:PolicyReport, report:ConflictPolicyReport;
-    dct:created "2025-06-26T15:53:09.450Z"^^xsd:dateTime;
-    report:ruleReport <urn:uuid:324a7954-f82f-4fa7-9650-9ca5e261774b>.
-<urn:uuid:324a7954-f82f-4fa7-9650-9ca5e261774b> a report:Report, report:ConflictReport;
+    ex:expectedReport <urn:uuid:a1a7ae0c-7fb9-45c9-9459-a0d48e6c17b2>.
+<urn:uuid:a1a7ae0c-7fb9-45c9-9459-a0d48e6c17b2> a report:PolicyReport, report:ConflictPolicyReport;
+    dct:created "2025-06-26T16:03:44.797Z"^^xsd:dateTime;
+    report:ruleReport <urn:uuid:e0455ecc-5b94-4ad1-84dd-9a804e57f226>.
+<urn:uuid:e0455ecc-5b94-4ad1-84dd-9a804e57f226> a report:Report, report:ConflictReport;
     report:attemptState report:Attempted;
     report:activationState report:Conflict.
 

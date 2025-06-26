@@ -8,7 +8,8 @@
 @prefix report: <https://w3id.org/force/compliance-report#>.
 
 <> a ex:PolicyDemo;
-    dct:title "Hard conflict detected. Permission vs Prohibition with constraints.".
+    dct:title "Hard conflict detected.";
+    dct:description " Permission vs Prohibition with constraints.".
 
 <urn:uuid:7087a379-d4ca-430f-b4d4-c17c53ab3c24> a odrl:Set;
     odrl:uid <urn:uuid:7087a379-d4ca-430f-b4d4-c17c53ab3c24>;

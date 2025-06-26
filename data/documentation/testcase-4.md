@@ -1,6 +1,6 @@
 
-# Hard conflict detected. A duty which is prohibited to be fulfilled.
-**Source**: https://github.com/SolidLabResearch/ODRL-Test-Conflicts/
+# Hard conflict detected.
+A duty which is prohibited to be fulfilled.
 > Alice is permitted to use resource X if she signs a contract with Bob.
 Alice is prohibited to sign Bob's contract.
 
@@ -16,7 +16,8 @@ Alice is prohibited to sign Bob's contract.
 @prefix report: <https://w3id.org/force/compliance-report#>.
 
 <> a ex:PolicyDemo;
-    dct:title "Hard conflict detected. A duty which is prohibited to be fulfilled.".
+    dct:title "Hard conflict detected.";
+    dct:description "A duty which is prohibited to be fulfilled.".
 
 <urn:uuid:c84c52ba-7326-49a0-9ed5-7312441c0dff> a odrl:Set;
     odrl:uid <urn:uuid:c84c52ba-7326-49a0-9ed5-7312441c0dff>;
@@ -58,14 +59,14 @@ Alice is prohibited to sign Bob's contract.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix report: <https://w3id.org/force/compliance-report#>.
 
-<urn:uuid:027ef05b-7527-4b12-9abd-bbc21ecb0bd3> a ex:TestCase, ex:ConflictTestCase;
-    dct:title "Hard conflict detected. A duty which is prohibited to be fulfilled.";
+<urn:uuid:67dd4fed-abe9-43d5-add6-6e51ad312f67> a ex:TestCase, ex:ConflictTestCase;
+    dct:title "Hard conflict detected.";
     report:policy <urn:uuid:c84c52ba-7326-49a0-9ed5-7312441c0dff>, <urn:uuid:21db7041-fc81-4d4e-aabc-90c594afcaf8>;
-    ex:expectedReport <urn:uuid:c85d0c89-2ab9-4822-9b8f-980d24b52f0f>.
-<urn:uuid:c85d0c89-2ab9-4822-9b8f-980d24b52f0f> a report:PolicyReport, report:ConflictPolicyReport;
-    dct:created "2025-06-26T15:53:06.150Z"^^xsd:dateTime;
-    report:ruleReport <urn:uuid:70787f40-331a-4e33-b01c-030cfc1415ee>.
-<urn:uuid:70787f40-331a-4e33-b01c-030cfc1415ee> a report:Report, report:ConflictReport;
+    ex:expectedReport <urn:uuid:7bea73e7-8574-45bd-8aeb-97454663a2d2>.
+<urn:uuid:7bea73e7-8574-45bd-8aeb-97454663a2d2> a report:PolicyReport, report:ConflictPolicyReport;
+    dct:created "2025-06-26T16:03:41.470Z"^^xsd:dateTime;
+    report:ruleReport <urn:uuid:9ae24943-a02f-4d44-b4bb-8ce0a29fb8df>.
+<urn:uuid:9ae24943-a02f-4d44-b4bb-8ce0a29fb8df> a report:Report, report:ConflictReport;
     report:attemptState report:Attempted;
     report:activationState report:Conflict.
 

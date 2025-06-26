@@ -1,6 +1,6 @@
 
-# Hard conflict detected. Permission vs Prohibition with constraints.
-**Source**: https://github.com/SolidLabResearch/ODRL-Test-Conflicts/
+# Hard conflict detected.
+ Permission vs Prohibition with constraints.
 > Alice is permitted to read resource X when her age is 18.
 Alice is prohibited to read resource X when her age is 18.
 
@@ -16,7 +16,8 @@ Alice is prohibited to read resource X when her age is 18.
 @prefix report: <https://w3id.org/force/compliance-report#>.
 
 <> a ex:PolicyDemo;
-    dct:title "Hard conflict detected. Permission vs Prohibition with constraints.".
+    dct:title "Hard conflict detected.";
+    dct:description " Permission vs Prohibition with constraints.".
 
 <urn:uuid:7087a379-d4ca-430f-b4d4-c17c53ab3c24> a odrl:Set;
     odrl:uid <urn:uuid:7087a379-d4ca-430f-b4d4-c17c53ab3c24>;
@@ -62,14 +63,14 @@ Alice is prohibited to read resource X when her age is 18.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix report: <https://w3id.org/force/compliance-report#>.
 
-<urn:uuid:86d41b9c-53d3-4210-ba2c-d99d8872726f> a ex:TestCase, ex:ConflictTestCase;
-    dct:title "Hard conflict detected. Permission vs Prohibition with constraints.";
+<urn:uuid:f3b0c52c-7692-47b9-95d5-0a8588610ab1> a ex:TestCase, ex:ConflictTestCase;
+    dct:title "Hard conflict detected.";
     report:policy <urn:uuid:7087a379-d4ca-430f-b4d4-c17c53ab3c24>, <urn:uuid:6116a93f-cbeb-4d5c-bcde-8f57320d48db>;
-    ex:expectedReport <urn:uuid:182830fc-68f7-4ebd-86d1-5e7c4501baa1>.
-<urn:uuid:182830fc-68f7-4ebd-86d1-5e7c4501baa1> a report:PolicyReport, report:ConflictPolicyReport;
-    dct:created "2025-06-26T15:53:07.257Z"^^xsd:dateTime;
-    report:ruleReport <urn:uuid:9120af2c-315d-424f-a8b5-c11135428fcd>.
-<urn:uuid:9120af2c-315d-424f-a8b5-c11135428fcd> a report:Report, report:ConflictReport;
+    ex:expectedReport <urn:uuid:b49eff4e-39ff-458b-876e-f721094e4bd6>.
+<urn:uuid:b49eff4e-39ff-458b-876e-f721094e4bd6> a report:PolicyReport, report:ConflictPolicyReport;
+    dct:created "2025-06-26T16:03:42.577Z"^^xsd:dateTime;
+    report:ruleReport <urn:uuid:4850f41e-cc16-488d-8b75-1e3739df4e91>.
+<urn:uuid:4850f41e-cc16-488d-8b75-1e3739df4e91> a report:Report, report:ConflictReport;
     report:attemptState report:Attempted;
     report:activationState report:Conflict.
 
