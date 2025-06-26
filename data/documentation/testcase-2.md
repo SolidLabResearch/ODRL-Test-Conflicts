@@ -1,5 +1,5 @@
 
-# Conflict detected.
+# Hard conflict detected. Using rdfs:subClassOf
 **Source**: https://github.com/SolidLabResearch/ODRL-Test-Suite/
 > Alice is permitted to (special) read resource X. Where special read a type of read.
 Alice is prohibited to read resource X.
@@ -52,7 +52,7 @@ ex:SpecialRead rdfs:subClassOf odrl:read .
 @prefix report: <https://w3id.org/force/compliance-report#>.
 
 <urn:uuid:afd905f4-6d20-4c59-a628-5b519e940d26> a ex:TestCase, ex:ConflictTestCase;
-    dct:title "Conflict detected.";
+    dct:title "Hard conflict detected. Using rdfs:subClassOf";
     report:policy <urn:uuid:c57a99b7-2ccf-44ad-8655-b11ed0020460>;
     ex:expectedReport <urn:uuid:c9d7910a-7df8-4609-a991-1db1f4825c43>.
 <urn:uuid:c9d7910a-7df8-4609-a991-1db1f4825c43> a report:PolicyReport, report:ConflictPolicyReport;
