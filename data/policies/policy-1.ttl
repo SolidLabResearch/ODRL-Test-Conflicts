@@ -21,7 +21,7 @@
     odrl:uid <urn:uuid:6ccb9180-f9e4-42b9-9473-9601cf4a037c>;
     odrl:description "Alice is prohibited to read resource X";
     odrl:source <https://github.com/SolidLabResearch/ODRL-Test-Suite/>;
-    odrl:permission <urn:uuid:a933af56-7977-4970-a08b-3818430470a5>.
+    odrl:prohibition <urn:uuid:a933af56-7977-4970-a08b-3818430470a5>.
 <urn:uuid:a933af56-7977-4970-a08b-3818430470a5> a odrl:Prohibition;
     odrl:assignee ex:alice;
     odrl:action odrl:read;
