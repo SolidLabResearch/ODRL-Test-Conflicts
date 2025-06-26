@@ -24,6 +24,7 @@ Alice is prohibited to read collection Y.
     odrl:action odrl:read;
     odrl:target ex:collectionX.
 
+# CollectionX with two documents
 ex:collectionX a odrl:AssetCollection;
     odrl:uid <http://somewhere.org/collection/x/>.
 
@@ -35,6 +36,7 @@ ex:document2 a dct:Document;
     dct:title "Annual Report 2021";
     odrl:partOf <http://somewhere.org/collection/x/>.
 
+# CollectionY also contains a document from CollectionX
 ex:collectionY a odrl:AssetCollection;
     odrl:uid <http://somewhere.org/collection/y/>.
 
