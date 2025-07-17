@@ -9,6 +9,8 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
+# This would probably not be a conflict but an illegal policy
+# when such kind of conjunctions would be allowed
 ex:rent a owl:Class.
 ex:sell a owl:Class.
 
