@@ -15,7 +15,7 @@
     
 <> a ex:TestCase, ex:ConflictTestCase;
     dct:title "Hard conflict detected.";
-    report:policy <./data/policies/policy-5a.ttl>, <./data/policies/policy-5b.ttl>;
+    report:policy ex:policy5a, ex:policy5b;
     ex:expectedReport [
         a report:PolicyReport, report:ConflictPolicyReport;
         report:ruleReport [

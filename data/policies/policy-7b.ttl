@@ -15,7 +15,7 @@ ex:document1 a dct:Document;
     dct:title "Annual Report 2020";
     odrl:partOf <http://somewhere.org/collection/y/>.
 
-<> a odrl:Set;
+ex:policy7b a odrl:Set;
     odrl:description "Alice is prohibited to read collection Y.";
     odrl:prohibition [
         a odrl:Prohibition;
