@@ -18,7 +18,7 @@ ex:rentsell a owl:Class ;
         owl:intersectionOf (ex:rent ex:sell)
     ].
 
-ex:policy8a a odrl:Set;
+ex:policy8c a odrl:Set;
     odrl:description "Alice is prohibited to rent and sell collection x.";
     odrl:permission [
         a odrl:Permission;
