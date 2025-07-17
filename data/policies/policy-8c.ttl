@@ -20,8 +20,8 @@ ex:rentsell a owl:Class ;
 
 ex:policy8c a odrl:Set;
     odrl:description "Alice is prohibited to rent and sell collection x.";
-    odrl:permission [
-        a odrl:Permission;
+    odrl:prohibition [
+        a odrl:Prohibition;
         odrl:assignee ex:alice;
         odrl:action ex:rentsell;
         odrl:target ex:collectionX
