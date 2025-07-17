@@ -10,12 +10,12 @@
 [
     a ex:PolicyDemo;
     dct:title "Hard conflict detected.";
-    dct:description "Permission date in 2025, Prohibition date before 2026."
+    dct:description "Permission student. Permission employee. Prohibition (student + employee)"
 ].
 
 <> a ex:TestCase, ex:ConflictTestCase;
     dct:title "Hard conflict detected.";
-    report:policy ex:policy9a, ex:policy9b;
+    report:policy ex:policy10a, ex:policy10b;
     ex:expectedReport [
         a report:PolicyReport, report:ConflictPolicyReport;
         report:ruleReport [
