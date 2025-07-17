@@ -15,6 +15,7 @@ ex:policy9a a odrl:Set;
         odrl:action odrl:read;
         odrl:target ex:resourceX;
         odrl:constraint [
+            a odrl:Constraint;
             odrl:leftOperand odrl:dateTime ;
             odrl:operator odrl:lt;
             odrl:rightOperand "2026-01-01"^^xsd:date
