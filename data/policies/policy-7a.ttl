@@ -17,13 +17,12 @@ ex:policy7a a odrl:Set;
     ].
 
 # CollectionX with two documents
-ex:collectionX a odrl:AssetCollection;
-    odrl:uid <http://somewhere.org/collection/x/>.
+ex:collectionX a odrl:AssetCollection.
 
 ex:document1 a dct:Document;
     dct:title "Annual Report 2020";
-    odrl:partOf <http://somewhere.org/collection/x/>.
+    odrl:partOf ex:collectionX.
 
 ex:document2 a dct:Document;
     dct:title "Annual Report 2021";
-    odrl:partOf <http://somewhere.org/collection/x/>.
+    odrl:partOf ex:collectionX.
