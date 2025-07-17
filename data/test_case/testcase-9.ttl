@@ -9,7 +9,7 @@
 
 [
     a ex:PolicyDemo;
-    dct:title "Hard conflict detected.";
+    dct:title "Ambiguous conflict detected.";
     dct:description "Permission date in 2025, Prohibition date before 2026."
 ].
 

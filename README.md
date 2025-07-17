@@ -12,3 +12,9 @@ npm install
 
 - **data/policies** : test policies
 - **data/test_case** : test cases for the policies
+
+## Conflicts
+
+- `Conflict` : rules that contradict eachother
+- `Ambiguous` : rules that permit an action in one state of the world but deny it in another
+- `Underspecified` : rules that never will trigger
