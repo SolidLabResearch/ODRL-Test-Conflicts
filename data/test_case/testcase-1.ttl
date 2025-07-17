@@ -7,13 +7,19 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix report: <https://w3id.org/force/compliance-report#>.
 
-<urn:uuid:b1a008b5-ded4-4b76-ba59-38bedc7d3f09> a ex:TestCase, ex:ConflictTestCase;
+[ a ex:PolicyDemo;
     dct:title "Hard conflict detected.";
-    report:policy <urn:uuid:d9e83b91-d274-4305-82d5-f96d951dc60f>, <urn:uuid:6ccb9180-f9e4-42b9-9473-9601cf4a037c>;
-    ex:expectedReport <urn:uuid:b8c20042-5140-4bf4-b5d8-1ad7a1dc17d5>.
-<urn:uuid:b8c20042-5140-4bf4-b5d8-1ad7a1dc17d5> a report:PolicyReport, report:ConflictPolicyReport;
-    dct:created "2025-06-26T16:03:38.086Z"^^xsd:dateTime;
-    report:ruleReport <urn:uuid:c859fb36-8278-43d2-b808-7e70e4919c75>.
-<urn:uuid:c859fb36-8278-43d2-b808-7e70e4919c75> a report:Report, report:ConflictReport;
-    report:attemptState report:Attempted;
-    report:activationState report:Conflict.
+    dct:description "Permission vs Prohibition."
+].
+    
+<> a ex:TestCase, ex:ConflictTestCase;
+    dct:title "Hard conflict detected.";
+    report:policy <./data/policies/policy-1a.ttl>, <./data/policies/policy-1b.ttl>;
+    ex:expectedReport [
+        a report:PolicyReport, report:ConflictPolicyReport;
+        report:ruleReport [
+            a report:Report, report:ConflictReport;
+            report:attemptState report:Attempted;
+            report:activationState report:Conflict
+        ]
+    ].

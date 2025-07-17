@@ -1,8 +1,12 @@
 {
+  "scripts": {
+    "util": "npx odrl-test-utils"
+  },
   "dependencies": {
     "@comunica/query-sparql": "^4.3.0",
     "@comunica/query-sparql-file": "^4.3.0",
     "n3": "^1.26.0",
+    "odrl-test-utils": "^1.0.0",
     "uuid": "^11.1.0"
   }
 }

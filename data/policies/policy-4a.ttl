@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix odrl: <http://www.w3.org/ns/odrl/2/>.
+@prefix ex: <http://example.org/>.
+@prefix temp: <http://example.com/request/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix report: <https://w3id.org/force/compliance-report#>.
+
+<> a odrl:Set;
+    odrl:description "Alice is permitted to use resource X if she signs a contract with Bob.";
+    odrl:permission [
+        a odrl:Permission;
+        odrl:assignee ex:alice;
+        odrl:action odrl:use;
+        odrl:target ex:resourceX ;
+        odrl:duty [
+            a odrl:Duty ;
+            odrl:action ex:signContract ;
+            odrl:assignee ex:alice ; 
+            odrl:assigner ex:bob ; 
+            odrl:target ex:contract
+        ]
+    ].

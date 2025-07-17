@@ -7,13 +7,20 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix report: <https://w3id.org/force/compliance-report#>.
 
-<urn:uuid:101f40e2-3ba9-4bf3-986b-b2f4cb8e9840> a ex:TestCase, ex:ConflictTestCase;
+[
+    a ex:PolicyDemo;
     dct:title "Hard conflict detected.";
-    report:policy <urn:uuid:37cfd244-4f7e-407e-8df1-34f4024f2040>, <urn:uuid:a740f9d0-1776-483a-a308-61e415261851>;
-    ex:expectedReport <urn:uuid:a1a7ae0c-7fb9-45c9-9459-a0d48e6c17b2>.
-<urn:uuid:a1a7ae0c-7fb9-45c9-9459-a0d48e6c17b2> a report:PolicyReport, report:ConflictPolicyReport;
-    dct:created "2025-06-26T16:03:44.797Z"^^xsd:dateTime;
-    report:ruleReport <urn:uuid:e0455ecc-5b94-4ad1-84dd-9a804e57f226>.
-<urn:uuid:e0455ecc-5b94-4ad1-84dd-9a804e57f226> a report:Report, report:ConflictReport;
-    report:attemptState report:Attempted;
-    report:activationState report:Conflict.
+    dct:description "Permission vs Prohibition in overlapping collections."
+].
+
+<> a ex:TestCase, ex:ConflictTestCase;
+    dct:title "Hard conflict detected.";
+    report:policy <./data/policies/policy-7a.ttl>, <./data/policies/policy-7b.ttl>;
+    ex:expectedReport [
+        a report:PolicyReport, report:ConflictPolicyReport;
+        report:ruleReport [
+            a report:Report, report:ConflictReport;
+            report:attemptState report:Attempted;
+            report:activationState report:Conflict
+        ]
+    ].
