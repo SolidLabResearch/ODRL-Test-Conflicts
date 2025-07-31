@@ -1,6 +1,8 @@
 # Test Conflicts
 
-This repository contains a collection of [ODRL](https://www.w3.org/TR/odrl-model/) test cases investigating various forms of policy conflicts
+This repository contains a collection of [ODRL](https://www.w3.org/TR/odrl-model/) test cases investigating various forms of policy conflicts. 
+
+Using [ODRL Vocabulary & Expression 2.2](https://www.w3.org/TR/odrl-vocab/).
 
 ## Dependencies
 
