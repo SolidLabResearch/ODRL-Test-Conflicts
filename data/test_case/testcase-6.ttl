@@ -10,11 +10,10 @@
 [
     a ex:PolicyDemo;
     dct:title "Hard conflict detected. ";
-    dct:desciption "Permission vs Prohibition in collection and partOf."
+    dct:description "Permission vs Prohibition in collection and partOf."
 ].
     
 <> a ex:TestCase, ex:ConflictTestCase;
-    dct:title "Hard conflict detected. ";
     report:policy ex:policy6a , ex:policy6b;
     ex:expectedReport [
         a report:PolicyReport, report:ConflictPolicyReport;
