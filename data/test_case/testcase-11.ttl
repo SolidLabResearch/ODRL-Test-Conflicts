@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix odrl: <http://www.w3.org/ns/odrl/2/>.
+@prefix ex: <http://example.org/>.
+@prefix temp: <http://example.com/request/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix report: <https://w3id.org/force/compliance-report#>.
+
+[
+    a ex:PolicyDemo;
+    dct:title "Permission with refinement. Obligation with conflicting refinement";
+    dct:description """
+The challenge is to detect the conflict between a permission to compensate with a
+refinement to pay more than 10 euro and the obligation to compensate with a 
+refinement to pay less than 10 euro for a resource.
+"""
+].
+
+<> a ex:TestCase, ex:ConflictTestCase;
+    report:policy ex:policy11a, ex:policy11b;
+    ex:expectedReport [
+        a report:PolicyReport, report:ConflictPolicyReport;
+        report:activationState report:Conflict
+    ].
