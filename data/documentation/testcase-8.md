@@ -120,11 +120,7 @@ drive, but not permitted to drink and drive.
     report:policy ex:policy8a, ex:policy8b, ex:policy8c;
     ex:expectedReport [
         a report:PolicyReport, report:ConflictPolicyReport;
-        report:ruleReport [
-            a report:Report, report:ConflictReport;
-            report:attemptState report:Attempted;
-            report:activationState report:Conflict
-        ]
+        report:activationState report:Conflict
     ].
 
 ```

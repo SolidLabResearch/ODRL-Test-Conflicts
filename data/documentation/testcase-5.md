@@ -92,11 +92,7 @@ and prohibition are in direct conflict with eachother.
     report:policy ex:policy5a, ex:policy5b;
     ex:expectedReport [
         a report:PolicyReport, report:ConflictPolicyReport;
-        report:ruleReport [
-            a report:Report, report:ConflictReport;
-            report:attemptState report:Attempted;
-            report:activationState report:Conflict
-        ]
+        report:activationState report:Conflict
     ].
 
 ```

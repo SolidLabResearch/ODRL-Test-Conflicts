@@ -81,11 +81,7 @@ of the prohibition.
     report:policy ex:policy3a, ex:policy3b;
     ex:expectedReport [
         a report:PolicyReport, report:ConflictPolicyReport;
-        report:ruleReport [
-            a report:Report, report:ConflictReport;
-            report:attemptState report:Attempted;
-            report:activationState report:Conflict
-        ]
+        report:activationState report:Conflict
     ].
 
 ```

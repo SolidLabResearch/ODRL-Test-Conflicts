@@ -88,11 +88,7 @@ permission is prohibited.
     report:policy ex:policy4a, ex:policy4b;
     ex:expectedReport [
         a report:PolicyReport, report:ConflictPolicyReport;
-        report:ruleReport [
-            a report:Report, report:ConflictReport;
-            report:attemptState report:Attempted;
-            report:activationState report:Conflict
-        ]
+        report:activationState report:Conflict
     ].
 
 ```

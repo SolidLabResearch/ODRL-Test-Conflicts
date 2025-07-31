@@ -102,11 +102,7 @@ the resource before 2026.
     report:policy ex:policy9a, ex:policy9b;
     ex:expectedReport [
         a report:PolicyReport, report:ConflictPolicyReport;
-        report:ruleReport [
-            a report:Report, report:ConflictReport;
-            report:attemptState report:Attempted;
-            report:activationState report:Conflict
-        ]
+        report:activationState report:Conflict
     ].
 
 ```
