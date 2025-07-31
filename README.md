@@ -4,6 +4,8 @@ This repository contains a collection of [ODRL](https://www.w3.org/TR/odrl-model
 
 Using [ODRL Vocabulary & Expression 2.2](https://www.w3.org/TR/odrl-vocab/).
 
+See [documentation](https://github.com/SolidLabResearch/ODRL-Test-Conflicts/tree/main/data/documentation) for an overview of the test cases.
+
 ## Dependencies
 
 ```
