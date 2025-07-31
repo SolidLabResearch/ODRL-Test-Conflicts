@@ -8,7 +8,7 @@
 @prefix report: <https://w3id.org/force/compliance-report#>.
 
 ex:policy1a a odrl:Set;
-    odrl:description "Alice is permitted to read resource X";
+    odrl:description "Alice is permitted to read resource X.";
     odrl:permission [
         a odrl:Permission;
         odrl:assignee ex:alice;

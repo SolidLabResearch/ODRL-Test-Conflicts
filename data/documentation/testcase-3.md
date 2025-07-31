@@ -1,8 +1,12 @@
-# Hard conflict detected.
+# Obligation vs Prohibition.
 
-Obligation vs Prohibition.
+ The challenge is to detect that the obligation is a direct conflict of the prohibition. 
 
 source: ./data/test_case/testcase-3.ttl
+
+**Expected Result** : https://w3id.org/force/compliance-report#Conflict
+
+The policies permit and prohibit the action for any possible state of the world.
 
 <h2>Policy <span>http://example.org/policy3a</span></h2>
 
@@ -66,8 +70,11 @@ ex:policy3b a odrl:Set;
 
 [
     a ex:PolicyDemo;
-    dct:title "Hard conflict detected.";
-    dct:description "Obligation vs Prohibition."
+    dct:title "Obligation vs Prohibition.";
+    dct:description """
+The challenge is to detect that the obligation is a direct conflict
+of the prohibition.
+"""
 ].
 
 <> a ex:TestCase, ex:ConflictTestCase;

@@ -9,8 +9,11 @@
 
 [ 
     a ex:PolicyDemo;
-    dct:title "Hard conflict detected.";
-    dct:description "Permission vs Prohibition odrl:read as subclass of odrl:use."
+    dct:title "Permission vs Prohibition odrl:read as subclass of odrl:use." ;
+    dct:description """
+The conflict challenge is to detect that the permitted action is a
+subclass of the prohibited action.
+"""
 ].
     
 <> a ex:TestCase, ex:ConflictTestCase;

@@ -9,8 +9,11 @@
 
 [
     a ex:PolicyDemo;
-    dct:title "Hard conflict detected. ";
-    dct:description "Permission vs Prohibition in collection and partOf."
+    dct:title "Permission vs Prohibition in collection and partOf.";
+    dct:description """
+The challenge is to detect that conflict between a permission to
+read a file that is part of a collection that is prohibited to read.
+""" 
 ].
     
 <> a ex:TestCase, ex:ConflictTestCase;

@@ -1,8 +1,12 @@
-# Hard conflict detected.
+# Permission vs Prohibition with constraints.
 
- Permission vs Prohibition with constraints.
+ The challenge is to detect that the conditions of the permission and prohibition are in direct conflict with eachother. 
 
 source: ./data/test_case/testcase-5.ttl
+
+**Expected Result** : https://w3id.org/force/compliance-report#Conflict
+
+The policies permit and prohibit the action for any possible state of the world.
 
 <h2>Policy <span>http://example.org/policy5a</span></h2>
 
@@ -77,8 +81,11 @@ ex:policy5b a odrl:Set;
 
 [
     a ex:PolicyDemo;
-    dct:title "Hard conflict detected.";
-    dct:description " Permission vs Prohibition with constraints."
+    dct:title "Permission vs Prohibition with constraints.";
+    dct:description """
+The challenge is to detect that the conditions of the permission
+and prohibition are in direct conflict with eachother.
+"""
 ].
     
 <> a ex:TestCase, ex:ConflictTestCase;

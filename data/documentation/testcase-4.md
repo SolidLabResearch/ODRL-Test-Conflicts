@@ -1,8 +1,12 @@
-# Hard conflict detected.
+# A duty which is prohibited to be fulfilled.
 
-A duty which is prohibited to be fulfilled.
+ The challenge is to detect that the duty that is required for a permission is prohibited. 
 
 source: ./data/test_case/testcase-4.ttl
+
+**Expected Result** : https://w3id.org/force/compliance-report#Conflict
+
+The policies permit and prohibit the action for any possible state of the world.
 
 <h2>Policy <span>http://example.org/policy4a</span></h2>
 
@@ -73,8 +77,11 @@ ex:policy4b a odrl:Set;
 
 [
     a ex:PolicyDemo;
-    dct:title "Hard conflict detected.";
-    dct:description "A duty which is prohibited to be fulfilled."
+    dct:title "A duty which is prohibited to be fulfilled.";
+    dct:description """
+The challenge is to detect that the duty that is required for a 
+permission is prohibited.
+"""
 ].
 
 <> a ex:TestCase, ex:ConflictTestCase;

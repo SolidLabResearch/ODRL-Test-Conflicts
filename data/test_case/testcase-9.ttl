@@ -9,8 +9,12 @@
 
 [
     a ex:PolicyDemo;
-    dct:title "Hard conflict detected.";
-    dct:description "Permission date in 2025, Prohibition date before 2026."
+    dct:title "Permission date in 2025, Prohibition date before 2026.";
+    dct:description """
+The challenge is in detecting the conflict in logical constraints where
+Alice is allowed to read a resource in 2025 but is prohibited to read
+the resource before 2026.
+"""
 ].
 
 <> a ex:TestCase, ex:ConflictTestCase;

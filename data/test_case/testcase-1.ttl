@@ -8,8 +8,11 @@
 @prefix report: <https://w3id.org/force/compliance-report#>.
 
 [ a ex:PolicyDemo;
-    dct:title "Hard conflict detected.";
-    dct:description "Permission vs Prohibition."
+    dct:title "Permission vs Prohibition";
+    dct:description """
+One policy permits an action for Alice. The other policy prohibits 
+the same action for Alice.
+"""
 ].
     
 <> a ex:TestCase, ex:ConflictTestCase;

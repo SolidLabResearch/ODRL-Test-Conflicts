@@ -9,8 +9,13 @@
 
 [
     a ex:PolicyDemo;
-    dct:title "Hard conflict detected.";
-    dct:description "Permission vs Prohibition in overlapping collections."
+    dct:title "Permission vs Prohibition in overlapping collections.";
+    dct:description """
+The challenge is to detect that the permitted and prohibited resources
+are from overlapping collections. Alice is permitted to read documents
+from one collection. However, all these documents are also in another
+collection that is prohibited to read.
+"""
 ].
 
 <> a ex:TestCase, ex:ConflictTestCase;

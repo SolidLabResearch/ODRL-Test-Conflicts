@@ -9,8 +9,11 @@
 
 [
     a ex:PolicyDemo;
-    dct:title "Hard conflict detected.";
-    dct:description " Permission vs Prohibition with constraints."
+    dct:title "Permission vs Prohibition with constraints.";
+    dct:description """
+The challenge is to detect that the conditions of the permission
+and prohibition are in direct conflict with eachother.
+"""
 ].
     
 <> a ex:TestCase, ex:ConflictTestCase;

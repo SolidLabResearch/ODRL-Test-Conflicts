@@ -1,8 +1,12 @@
-# Hard conflict detected.
+# Permission student. Permission employee. Prohibition (student + employee)
 
-Permission student. Permission employee. Prohibition (student + employee)
+ The challenge is to detect a conflict in the logical constraints. Alice is a student and an employee. Alice is allowed to read a resource if she is a student OR an employee. Alice is prohibited to read a resource if she is a student AND an employee.<br> The results are ambiguous: in some state to the world the policies are in conflict ( the sotw as provide), in other states of the world not (when alice is not student AND employee). 
 
 source: ./data/test_case/testcase-10.ttl
+
+**Expected Result** : https://w3id.org/force/compliance-report#Ambiguous
+
+The policies are ambiguous: some states of the world permit an action while other states of the world prohibit the action.
 
 <h2>Policy <span>http://example.org/policy10a</span></h2>
 
@@ -100,8 +104,16 @@ ex:policy10b a odrl:Set;
 
 [
     a ex:PolicyDemo;
-    dct:title "Hard conflict detected.";
-    dct:description "Permission student. Permission employee. Prohibition (student + employee)"
+    dct:title "Permission student. Permission employee. Prohibition (student + employee)";
+    dct:description """
+The challenge is to detect a conflict in the logical constraints. Alice is a
+student and an employee. Alice is allowed to read a resource if she is a
+student OR an employee. Alice is prohibited to read a resource if she is a
+student AND an employee.<br>
+The results are ambiguous: in some state to the world the policies are in conflict (
+the sotw as provide), in other states of the world not (when alice is not student AND
+employee).
+"""
 ].
 
 <> a ex:TestCase, ex:ConflictTestCase;
@@ -111,7 +123,7 @@ ex:policy10b a odrl:Set;
         report:ruleReport [
             a report:Report, report:ConflictReport;
             report:attemptState report:Attempted;
-            report:activationState report:Conflict
+            report:activationState report:Ambiguous
         ]
     ].
 

@@ -1,8 +1,12 @@
-# Hard conflict detected.
+# Permission vs Prohibition in overlapping collections.
 
-Permission vs Prohibition in overlapping collections.
+ The challenge is to detect that the permitted and prohibited resources are from overlapping collections. Alice is permitted to read documents from one collection. However, all these documents are also in another collection that is prohibited to read. 
 
 source: ./data/test_case/testcase-7.ttl
+
+**Expected Result** : https://w3id.org/force/compliance-report#Conflict
+
+The policies permit and prohibit the action for any possible state of the world.
 
 <h2>Policy <span>http://example.org/policy7a</span></h2>
 
@@ -53,11 +57,19 @@ Alice is prohibited to read collection Y.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix report: <https://w3id.org/force/compliance-report#>.
 
-# CollectionY also contains a document from CollectionX
+# CollectionY also contains all documents from CollectionX
 ex:collectionY a odrl:AssetCollection.
 
 ex:document1 a dct:Document;
     dct:title "Annual Report 2020";
+    odrl:partOf ex:collectionY.
+
+ex:document2 a dct:Document;
+    dct:title "Annual Report 2021";
+    odrl:partOf ex:collectionY.
+
+ex:document3 a dct:Document;
+    dct:title "Annual Report 2022";
     odrl:partOf ex:collectionY.
 
 ex:policy7b a odrl:Set;
@@ -84,8 +96,13 @@ ex:policy7b a odrl:Set;
 
 [
     a ex:PolicyDemo;
-    dct:title "Hard conflict detected.";
-    dct:description "Permission vs Prohibition in overlapping collections."
+    dct:title "Permission vs Prohibition in overlapping collections.";
+    dct:description """
+The challenge is to detect that the permitted and prohibited resources
+are from overlapping collections. Alice is permitted to read documents
+from one collection. However, all these documents are also in another
+collection that is prohibited to read.
+"""
 ].
 
 <> a ex:TestCase, ex:ConflictTestCase;

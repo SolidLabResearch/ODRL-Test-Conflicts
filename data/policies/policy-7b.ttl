@@ -7,11 +7,19 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix report: <https://w3id.org/force/compliance-report#>.
 
-# CollectionY also contains a document from CollectionX
+# CollectionY also contains all documents from CollectionX
 ex:collectionY a odrl:AssetCollection.
 
 ex:document1 a dct:Document;
     dct:title "Annual Report 2020";
+    odrl:partOf ex:collectionY.
+
+ex:document2 a dct:Document;
+    dct:title "Annual Report 2021";
+    odrl:partOf ex:collectionY.
+
+ex:document3 a dct:Document;
+    dct:title "Annual Report 2022";
     odrl:partOf ex:collectionY.
 
 ex:policy7b a odrl:Set;

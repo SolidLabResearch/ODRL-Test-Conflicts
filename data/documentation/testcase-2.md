@@ -1,8 +1,12 @@
-# Hard conflict detected.
+# Permission vs Prohibition odrl:read as subclass of odrl:use.
 
-Permission vs Prohibition odrl:read as subclass of odrl:use.
+ The conflict challenge is to detect that the permitted action is a subclass of the prohibited action. 
 
 source: ./data/test_case/testcase-2.ttl
+
+**Expected Result** : https://w3id.org/force/compliance-report#Conflict
+
+The policies permit and prohibit the action for any possible state of the world.
 
 <h2>Policy <span>http://example.org/policy2a</span></h2>
 
@@ -66,8 +70,11 @@ ex:policy2b a odrl:Set;
 
 [ 
     a ex:PolicyDemo;
-    dct:title "Hard conflict detected.";
-    dct:description "Permission vs Prohibition odrl:read as subclass of odrl:use."
+    dct:title "Permission vs Prohibition odrl:read as subclass of odrl:use." ;
+    dct:description """
+The conflict challenge is to detect that the permitted action is a
+subclass of the prohibited action.
+"""
 ].
     
 <> a ex:TestCase, ex:ConflictTestCase;

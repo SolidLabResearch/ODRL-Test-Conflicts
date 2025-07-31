@@ -9,8 +9,13 @@
 
 [
     a ex:PolicyDemo;
-    dct:title "Hard conflict detected.";
-    dct:description "Permission X, Permission Y and Prohibition (X & Y)."
+    dct:title "Permission X, Permission Y and Prohibition (X & Y).";
+    dct:description """
+The challenge is in the OWL `intersectionOf` (if this is supported). The
+conflict is alike the "drink & drive" problem. If one is prohibited to
+drink and drink, it means that one is permitted to drink, permitted to 
+drive, but not permitted to drink and drive.
+"""
 ].
 
 <> a ex:TestCase, ex:ConflictTestCase;

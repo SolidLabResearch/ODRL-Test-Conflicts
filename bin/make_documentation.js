@@ -55,6 +55,29 @@ ${documentation.description}
 source: ${documentation.test.id}
 `;
 
+    if (documentation.state === 'https://w3id.org/force/compliance-report#Conflict') {
+        markdown += `
+**Expected Result** : ${documentation.state}
+
+The policies permit and prohibit the action for any possible state of the world.
+`;
+    }
+    else if (documentation.state === 'https://w3id.org/force/compliance-report#Ambiguous') {
+        markdown += `
+**Expected Result** : ${documentation.state}
+
+The policies are ambiguous: some states of the world permit an action while other states of the world prohibit the action.
+`;
+    }
+    else if (documentation.state === 'https://w3id.org/force/compliance-report#Underspecified') {
+        markdown += `
+**Expected Result** : ${documentation.state}
+
+The policies are under specified: some rules are available that will never trigger for any state of the world.
+`;
+    }
+
+
     for (let i = 0 ; i < documentation.policy.length ; i++) {
         markdown +=`
 <h2>Policy <span>${documentation.policy[i].id}</span></h2>
@@ -83,13 +106,15 @@ async function testDocumentation(path, index) {
         PREFIX dct: <http://purl.org/dc/terms/>
         PREFIX report: <https://w3id.org/force/compliance-report#>
         
-        SELECT ?title ?description ?policy ?policyDescription WHERE {
+        SELECT ?title ?description ?policy ?policyDescription ?state WHERE {
             ?s a ex:PolicyDemo .
             ?s dct:title ?title .
             ?s dct:description ?description .
 
             ?t a ex:TestCase .
             ?t report:policy ?policy .
+            
+            ?x report:activationState ?state .
         }`, {
             sources: [path]
     });
@@ -142,7 +167,7 @@ async function testDocumentation(path, index) {
                 }
             }
             else {
-                doc[key.value] = val.value;
+                doc[key.value] = myTrim(val.value);
             }
         }
     }
@@ -194,7 +219,7 @@ async function policyData(path) {
         if (id && desc) {
             result.push({
                 id: id,
-                description: desc
+                description: myTrim(desc)
             });
         }
         else {
@@ -206,4 +231,11 @@ async function policyData(path) {
 
 function readText(path) {
     return fs.readFileSync(path, { encoding: 'utf-8' });    
+}
+
+function myTrim(str) {
+    if (!str) {
+        return str;
+    }
+    return str.replaceAll(/[\r\n]/gm, ' ').replaceAll(/ +/g,' ');
 }

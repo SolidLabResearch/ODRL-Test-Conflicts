@@ -1,8 +1,12 @@
-# Hard conflict detected.
+# Permission date in 2025, Prohibition date before 2026.
 
-Permission date in 2025, Prohibition date before 2026.
+ The challenge is in detecting the conflict in logical constraints where Alice is allowed to read a resource in 2025 but is prohibited to read the resource before 2026. 
 
 source: ./data/test_case/testcase-9.ttl
+
+**Expected Result** : https://w3id.org/force/compliance-report#Conflict
+
+The policies permit and prohibit the action for any possible state of the world.
 
 <h2>Policy <span>http://example.org/policy9a</span></h2>
 
@@ -86,8 +90,12 @@ ex:policy9b a odrl:Set;
 
 [
     a ex:PolicyDemo;
-    dct:title "Hard conflict detected.";
-    dct:description "Permission date in 2025, Prohibition date before 2026."
+    dct:title "Permission date in 2025, Prohibition date before 2026.";
+    dct:description """
+The challenge is in detecting the conflict in logical constraints where
+Alice is allowed to read a resource in 2025 but is prohibited to read
+the resource before 2026.
+"""
 ].
 
 <> a ex:TestCase, ex:ConflictTestCase;

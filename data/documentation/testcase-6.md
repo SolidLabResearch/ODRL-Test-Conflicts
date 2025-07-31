@@ -1,8 +1,12 @@
-# Hard conflict detected. 
+# Permission vs Prohibition in collection and partOf.
 
-Permission vs Prohibition in collection and partOf.
+ The challenge is to detect that conflict between a permission to read a file that is part of a collection that is prohibited to read. 
 
 source: ./data/test_case/testcase-6.ttl
+
+**Expected Result** : https://w3id.org/force/compliance-report#Conflict
+
+The policies permit and prohibit the action for any possible state of the world.
 
 <h2>Policy <span>http://example.org/policy6a</span></h2>
 
@@ -76,8 +80,11 @@ ex:policy6b a odrl:Set;
 
 [
     a ex:PolicyDemo;
-    dct:title "Hard conflict detected. ";
-    dct:description "Permission vs Prohibition in collection and partOf."
+    dct:title "Permission vs Prohibition in collection and partOf.";
+    dct:description """
+The challenge is to detect that conflict between a permission to
+read a file that is part of a collection that is prohibited to read.
+""" 
 ].
     
 <> a ex:TestCase, ex:ConflictTestCase;

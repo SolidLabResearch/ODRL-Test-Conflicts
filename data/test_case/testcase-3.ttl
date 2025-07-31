@@ -9,8 +9,11 @@
 
 [
     a ex:PolicyDemo;
-    dct:title "Hard conflict detected.";
-    dct:description "Obligation vs Prohibition."
+    dct:title "Obligation vs Prohibition.";
+    dct:description """
+The challenge is to detect that the obligation is a direct conflict
+of the prohibition.
+"""
 ].
 
 <> a ex:TestCase, ex:ConflictTestCase;

@@ -9,8 +9,16 @@
 
 [
     a ex:PolicyDemo;
-    dct:title "Hard conflict detected.";
-    dct:description "Permission student. Permission employee. Prohibition (student + employee)"
+    dct:title "Permission student. Permission employee. Prohibition (student + employee)";
+    dct:description """
+The challenge is to detect a conflict in the logical constraints. Alice is a
+student and an employee. Alice is allowed to read a resource if she is a
+student OR an employee. Alice is prohibited to read a resource if she is a
+student AND an employee.<br>
+The results are ambiguous: in some state to the world the policies are in conflict (
+the sotw as provide), in other states of the world not (when alice is not student AND
+employee).
+"""
 ].
 
 <> a ex:TestCase, ex:ConflictTestCase;
@@ -20,6 +28,6 @@
         report:ruleReport [
             a report:Report, report:ConflictReport;
             report:attemptState report:Attempted;
-            report:activationState report:Conflict
+            report:activationState report:Ambiguous
         ]
     ].

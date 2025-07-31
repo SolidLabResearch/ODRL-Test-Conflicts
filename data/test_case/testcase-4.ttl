@@ -9,8 +9,11 @@
 
 [
     a ex:PolicyDemo;
-    dct:title "Hard conflict detected.";
-    dct:description "A duty which is prohibited to be fulfilled."
+    dct:title "A duty which is prohibited to be fulfilled.";
+    dct:description """
+The challenge is to detect that the duty that is required for a 
+permission is prohibited.
+"""
 ].
 
 <> a ex:TestCase, ex:ConflictTestCase;

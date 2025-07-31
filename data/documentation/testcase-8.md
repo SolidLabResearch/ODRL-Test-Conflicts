@@ -1,8 +1,12 @@
-# Hard conflict detected.
+# Permission X, Permission Y and Prohibition (X & Y).
 
-Permission X, Permission Y and Prohibition (X & Y).
+ The challenge is in the OWL `intersectionOf` (if this is supported). The conflict is alike the "drink & drive" problem. If one is prohibited to drink and drink, it means that one is permitted to drink, permitted to drive, but not permitted to drink and drive. 
 
 source: ./data/test_case/testcase-8.ttl
+
+**Expected Result** : https://w3id.org/force/compliance-report#Conflict
+
+The policies permit and prohibit the action for any possible state of the world.
 
 <h2>Policy <span>http://example.org/policy8a</span></h2>
 
@@ -103,8 +107,13 @@ ex:policy8c a odrl:Set;
 
 [
     a ex:PolicyDemo;
-    dct:title "Hard conflict detected.";
-    dct:description "Permission X, Permission Y and Prohibition (X & Y)."
+    dct:title "Permission X, Permission Y and Prohibition (X & Y).";
+    dct:description """
+The challenge is in the OWL `intersectionOf` (if this is supported). The
+conflict is alike the "drink & drive" problem. If one is prohibited to
+drink and drink, it means that one is permitted to drink, permitted to 
+drive, but not permitted to drink and drive.
+"""
 ].
 
 <> a ex:TestCase, ex:ConflictTestCase;
