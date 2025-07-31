@@ -11,7 +11,7 @@ ex:alice
     a ex:student , ex:employee .
 
 ex:policy10a a odrl:Set;
-    odrl:description "Alice is allowed to read if she is a student or an employee";
+    odrl:description "Alice is allowed to read if she is a student or an employee.";
     odrl:permission [
         a odrl:Permission ;
         odrl:assignee ex:alice;

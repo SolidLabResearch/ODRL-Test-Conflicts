@@ -58,7 +58,7 @@ ex:policy8b a odrl:Set;
 
 <h2>Policy <span>http://example.org/policy8c</span></h2>
 
-Alice is prohibited to rent and sell collection x.
+Alice is prohibited to rent and sell collection X.
 
 ```
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
@@ -84,7 +84,7 @@ ex:rentsell a owl:Class ;
     ].
 
 ex:policy8c a odrl:Set;
-    odrl:description "Alice is prohibited to rent and sell collection x.";
+    odrl:description "Alice is prohibited to rent and sell collection X.";
     odrl:prohibition [
         a odrl:Prohibition;
         odrl:assignee ex:alice;

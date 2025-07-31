@@ -10,7 +10,7 @@ The policies permit and prohibit the action for any possible state of the world.
 
 <h2>Policy <span>http://example.org/policy9a</span></h2>
 
-Alice is permitted to read resource X in 2025
+Alice is permitted to read resource X in 2025.
 
 ```
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
@@ -23,7 +23,7 @@ Alice is permitted to read resource X in 2025
 @prefix report: <https://w3id.org/force/compliance-report#>.
 
 ex:policy9a a odrl:Set;
-    odrl:description "Alice is permitted to read resource X in 2025";
+    odrl:description "Alice is permitted to read resource X in 2025.";
     odrl:permission [
         a odrl:Permission;
         odrl:assignee ex:alice;
@@ -48,7 +48,7 @@ ex:policy9a a odrl:Set;
 
 <h2>Policy <span>http://example.org/policy9b</span></h2>
 
-Alice is not allowed to read resource X before 2026
+Alice is not allowed to read resource X before 2026.
 
 ```
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
@@ -61,7 +61,7 @@ Alice is not allowed to read resource X before 2026
 @prefix report: <https://w3id.org/force/compliance-report#>.
 
 ex:policy9b a odrl:Set;
-    odrl:description "Alice is not allowed to read resource X before 2026";
+    odrl:description "Alice is not allowed to read resource X before 2026.";
     odrl:prohibition [
         a odrl:Prohibition ;
         odrl:assignee ex:alice;

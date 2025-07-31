@@ -10,7 +10,7 @@ The policies are ambiguous: some states of the world permit an action while othe
 
 <h2>Policy <span>http://example.org/policy10a</span></h2>
 
-Alice is allowed to read if she is a student or an employee
+Alice is allowed to read if she is a student or an employee.
 
 ```
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
@@ -26,7 +26,7 @@ ex:alice
     a ex:student , ex:employee .
 
 ex:policy10a a odrl:Set;
-    odrl:description "Alice is allowed to read if she is a student or an employee";
+    odrl:description "Alice is allowed to read if she is a student or an employee.";
     odrl:permission [
         a odrl:Permission ;
         odrl:assignee ex:alice;
@@ -54,7 +54,7 @@ ex:policy10a a odrl:Set;
 
 <h2>Policy <span>http://example.org/policy10b</span></h2>
 
-Alice is prohibited to read if she is both a student and employee
+Alice is prohibited to read if she is both a student and employee.
 
 ```
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
@@ -67,7 +67,7 @@ Alice is prohibited to read if she is both a student and employee
 @prefix report: <https://w3id.org/force/compliance-report#>.
 
 ex:policy10b a odrl:Set;
-    odrl:description "Alice is prohibited to read if she is both a student and employee";
+    odrl:description "Alice is prohibited to read if she is both a student and employee.";
     odrl:prohibition [
         a odrl:Prohibition ;
         odrl:assignee ex:alice;
