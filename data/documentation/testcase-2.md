@@ -1,10 +1,12 @@
 # Permission vs Prohibition odrl:read as subclass of odrl:use.
+Source: ./data/test_case/testcase-2.ttl
 
  The conflict challenge is to detect that the permitted action is a subclass of the prohibited action. 
 
-source: ./data/test_case/testcase-2.ttl
 
-**Expected Result** : https://w3id.org/force/compliance-report#Conflict
+## Expected Result 
+
+https://w3id.org/force/compliance-report#Conflict
 
 The policies permit and prohibit the action for any possible state of the world.
 

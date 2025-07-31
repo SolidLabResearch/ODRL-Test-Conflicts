@@ -1,10 +1,12 @@
 # A duty which is prohibited to be fulfilled.
+Source: ./data/test_case/testcase-4.ttl
 
  The challenge is to detect that the duty that is required for a permission is prohibited. 
 
-source: ./data/test_case/testcase-4.ttl
 
-**Expected Result** : https://w3id.org/force/compliance-report#Conflict
+## Expected Result 
+
+https://w3id.org/force/compliance-report#Conflict
 
 The policies permit and prohibit the action for any possible state of the world.
 

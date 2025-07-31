@@ -1,10 +1,12 @@
 # Permission student. Permission employee. Prohibition (student + employee)
+Source: ./data/test_case/testcase-10.ttl
 
  The challenge is to detect a conflict in the logical constraints. Alice is a student and an employee. Alice is allowed to read a resource if she is a student OR an employee. Alice is prohibited to read a resource if she is a student AND an employee.<br> The results are ambiguous: in some state to the world the policies are in conflict ( the sotw as provided), in other states of the world not (when alice is not student AND employee). 
 
-source: ./data/test_case/testcase-10.ttl
 
-**Expected Result** : https://w3id.org/force/compliance-report#Ambiguous
+## Expected Result
+
+https://w3id.org/force/compliance-report#Ambiguous
 
 The policies are ambiguous: some states of the world permit an action while other states of the world prohibit the action.
 

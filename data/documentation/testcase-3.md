@@ -1,10 +1,12 @@
 # Obligation vs Prohibition.
+Source: ./data/test_case/testcase-3.ttl
 
  The challenge is to detect that the obligation is a direct conflict of the prohibition. 
 
-source: ./data/test_case/testcase-3.ttl
 
-**Expected Result** : https://w3id.org/force/compliance-report#Conflict
+## Expected Result 
+
+https://w3id.org/force/compliance-report#Conflict
 
 The policies permit and prohibit the action for any possible state of the world.
 

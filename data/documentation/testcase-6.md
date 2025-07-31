@@ -1,10 +1,12 @@
 # Permission vs Prohibition in collection and partOf.
+Source: ./data/test_case/testcase-6.ttl
 
  The challenge is to detect that conflict between a permission to read a file that is part of a collection that is prohibited to read. 
 
-source: ./data/test_case/testcase-6.ttl
 
-**Expected Result** : https://w3id.org/force/compliance-report#Conflict
+## Expected Result 
+
+https://w3id.org/force/compliance-report#Conflict
 
 The policies permit and prohibit the action for any possible state of the world.
 

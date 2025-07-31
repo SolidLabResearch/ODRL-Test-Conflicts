@@ -1,10 +1,12 @@
 # Permission date in 2025, Prohibition date before 2026.
+Source: ./data/test_case/testcase-9.ttl
 
  The challenge is in detecting the conflict in logical constraints where Alice is allowed to read a resource in 2025 but is prohibited to read the resource before 2026. 
 
-source: ./data/test_case/testcase-9.ttl
 
-**Expected Result** : https://w3id.org/force/compliance-report#Conflict
+## Expected Result 
+
+https://w3id.org/force/compliance-report#Conflict
 
 The policies permit and prohibit the action for any possible state of the world.
 

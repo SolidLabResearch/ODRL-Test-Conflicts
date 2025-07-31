@@ -1,10 +1,12 @@
 # Permission vs Prohibition with constraints.
+Source: ./data/test_case/testcase-5.ttl
 
  The challenge is to detect that the conditions of the permission and prohibition are in direct conflict with eachother. 
 
-source: ./data/test_case/testcase-5.ttl
 
-**Expected Result** : https://w3id.org/force/compliance-report#Conflict
+## Expected Result 
+
+https://w3id.org/force/compliance-report#Conflict
 
 The policies permit and prohibit the action for any possible state of the world.
 

@@ -1,10 +1,12 @@
 # Permission vs Prohibition
+Source: ./data/test_case/testcase-1.ttl
 
  One policy permits an action for Alice. The other policy prohibits the same action for Alice. 
 
-source: ./data/test_case/testcase-1.ttl
 
-**Expected Result** : https://w3id.org/force/compliance-report#Conflict
+## Expected Result 
+
+https://w3id.org/force/compliance-report#Conflict
 
 The policies permit and prohibit the action for any possible state of the world.
 

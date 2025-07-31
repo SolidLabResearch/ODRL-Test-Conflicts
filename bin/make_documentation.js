@@ -49,29 +49,35 @@ async function main() {
 
 function markdownDocumentation(documentation) {
     let markdown =`# ${documentation.title}
+Source: ${documentation.test.id}
 
 ${documentation.description}
 
-source: ${documentation.test.id}
 `;
 
     if (documentation.state === 'https://w3id.org/force/compliance-report#Conflict') {
         markdown += `
-**Expected Result** : ${documentation.state}
+## Expected Result 
+
+${documentation.state}
 
 The policies permit and prohibit the action for any possible state of the world.
 `;
     }
     else if (documentation.state === 'https://w3id.org/force/compliance-report#Ambiguous') {
         markdown += `
-**Expected Result** : ${documentation.state}
+## Expected Result
+
+${documentation.state}
 
 The policies are ambiguous: some states of the world permit an action while other states of the world prohibit the action.
 `;
     }
     else if (documentation.state === 'https://w3id.org/force/compliance-report#Underspecified') {
         markdown += `
-**Expected Result** : ${documentation.state}
+## Expected Result
+
+${documentation.state}
 
 The policies are under specified: some rules are available that will never trigger for any state of the world.
 `;

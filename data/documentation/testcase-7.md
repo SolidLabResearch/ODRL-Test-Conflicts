@@ -1,10 +1,12 @@
 # Permission vs Prohibition in overlapping collections.
+Source: ./data/test_case/testcase-7.ttl
 
  The challenge is to detect that the permitted and prohibited resources are from overlapping collections. Alice is permitted to read documents from one collection. However, all these documents are also in another collection that is prohibited to read. 
 
-source: ./data/test_case/testcase-7.ttl
 
-**Expected Result** : https://w3id.org/force/compliance-report#Conflict
+## Expected Result 
+
+https://w3id.org/force/compliance-report#Conflict
 
 The policies permit and prohibit the action for any possible state of the world.
 
