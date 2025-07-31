@@ -31,7 +31,7 @@ ex:policy11a a odrl:Set;
         a odrl:Permission;
         odrl:assignee ex:alice;
         odrl:action [ 
-            rdf:value odrl:compensate;
+            rdf:value odrl:pay;
             odrl:refinement [
                 odrl:leftOperand odrl:payAmmount;
                 odrl:operator odrl:gt;
@@ -64,7 +64,7 @@ ex:policy11b a odrl:Set;
         a odrl:Obligation;
         odrl:assignee ex:alice;
         odrl:action [ 
-            rdf:value odrl:compensate;
+            rdf:value odrl:pay;
             odrl:refinement [
                 odrl:leftOperand odrl:payAmmount;
                 odrl:operator odrl:lt;
