@@ -28,7 +28,6 @@ Alice is permitted to pay more than 10 euro for resource X.
 ex:policy11a a odrl:Set;
     odrl:description "Alice is permitted to pay more than 10 euro for resource X.";
     odrl:permission [
-        a odrl:Permission;
         odrl:assignee ex:alice;
         odrl:action [ 
             rdf:value odrl:pay;
@@ -61,7 +60,6 @@ Alice has an obligation to pay less than 10 euro for resource X.
 ex:policy11b a odrl:Set;
     odrl:description "Alice has an obligation to pay less than 10 euro for resource X.";
     odrl:obligation [
-        a odrl:Obligation;
         odrl:assignee ex:alice;
         odrl:action [ 
             rdf:value odrl:pay;

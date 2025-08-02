@@ -10,7 +10,6 @@
 ex:policy4b a odrl:Set;
     odrl:description "Alice is prohibited to sign Bob's contract.";
     odrl:prohibition [
-        a odrl:Prohibition;
         odrl:assignee ex:alice;
         odrl:assigner ex:bob ;
         odrl:action ex:signContract;

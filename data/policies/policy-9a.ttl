@@ -10,7 +10,6 @@
 ex:policy9a a odrl:Set;
     odrl:description "Alice is permitted to read resource X in 2025.";
     odrl:permission [
-        a odrl:Permission;
         odrl:assignee ex:alice;
         odrl:action odrl:read;
         odrl:target ex:resourceX;

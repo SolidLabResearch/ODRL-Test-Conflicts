@@ -11,7 +11,6 @@
 ex:policy11a a odrl:Set;
     odrl:description "Alice is permitted to pay more than 10 euro for resource X.";
     odrl:permission [
-        a odrl:Permission;
         odrl:assignee ex:alice;
         odrl:action [ 
             rdf:value odrl:pay;

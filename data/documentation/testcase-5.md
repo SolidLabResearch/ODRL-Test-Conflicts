@@ -27,7 +27,6 @@ Alice is permitted to read resource X when her age is 18.
 ex:policy5a a odrl:Set;
     odrl:description "Alice is permitted to read resource X when her age is 18.";
     odrl:permission [
-        a odrl:Permission;
         odrl:assignee ex:alice;
         odrl:action odrl:read;
         odrl:target ex:resourceX;
@@ -56,7 +55,6 @@ Alice is prohibited to read resource X when her age is 18.
 ex:policy5b a odrl:Set;
     odrl:description "Alice is prohibited to read resource X when her age is 18.";
     odrl:prohibited [
-        a odrl:Prohibition;
         odrl:assignee ex:alice;
         odrl:action odrl:read;
         odrl:target ex:resourceX;

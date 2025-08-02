@@ -10,12 +10,10 @@
 ex:policy4a a odrl:Set;
     odrl:description "Alice is permitted to use resource X if she signs a contract with Bob.";
     odrl:permission [
-        a odrl:Permission;
         odrl:assignee ex:alice;
         odrl:action odrl:use;
         odrl:target ex:resourceX ;
         odrl:duty [
-            a odrl:Duty ;
             odrl:action ex:signContract ;
             odrl:assignee ex:alice ; 
             odrl:assigner ex:bob ; 

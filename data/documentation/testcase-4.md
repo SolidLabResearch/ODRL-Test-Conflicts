@@ -27,12 +27,10 @@ Alice is permitted to use resource X if she signs a contract with Bob.
 ex:policy4a a odrl:Set;
     odrl:description "Alice is permitted to use resource X if she signs a contract with Bob.";
     odrl:permission [
-        a odrl:Permission;
         odrl:assignee ex:alice;
         odrl:action odrl:use;
         odrl:target ex:resourceX ;
         odrl:duty [
-            a odrl:Duty ;
             odrl:action ex:signContract ;
             odrl:assignee ex:alice ; 
             odrl:assigner ex:bob ; 
@@ -58,7 +56,6 @@ Alice is prohibited to sign Bob's contract.
 ex:policy4b a odrl:Set;
     odrl:description "Alice is prohibited to sign Bob's contract.";
     odrl:prohibition [
-        a odrl:Prohibition;
         odrl:assignee ex:alice;
         odrl:assigner ex:bob ;
         odrl:action ex:signContract;

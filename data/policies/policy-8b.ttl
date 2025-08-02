@@ -10,7 +10,6 @@
 ex:policy8b a odrl:Set;
     odrl:description "Alice is allowed to sell collection X.";
     odrl:permission [
-        a odrl:Permission;
         odrl:assignee ex:alice;
         odrl:action ex:sell;
         odrl:target ex:collectionX

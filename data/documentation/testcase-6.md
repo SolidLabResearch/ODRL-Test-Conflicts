@@ -27,7 +27,6 @@ Alice is allowed to read collection X.
 ex:policy6a a odrl:Set;
     odrl:description "Alice is allowed to read collection X.";
     odrl:permission [
-        a odrl:Permission;
         odrl:assignee ex:alice;
         odrl:action odrl:read;
         odrl:target ex:collectionX
@@ -61,7 +60,6 @@ ex:document2 a dct:Document;
 ex:policy6b a odrl:Set;
     odrl:description "Alice is prohibited to read document2 (that is part of collection X).";
     odrl:prohibition [
-        a odrl:Prohibition;
         odrl:assignee ex:alice;
         odrl:action odrl:read;
         odrl:target ex:document2 

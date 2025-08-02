@@ -25,7 +25,6 @@ ex:document3 a dct:Document;
 ex:policy7b a odrl:Set;
     odrl:description "Alice is prohibited to read collection Y.";
     odrl:prohibition [
-        a odrl:Prohibition;
         odrl:assignee ex:alice;
         odrl:action odrl:read;
         odrl:target ex:collectionY

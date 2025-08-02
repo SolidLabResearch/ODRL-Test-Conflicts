@@ -10,7 +10,6 @@
 ex:policy6a a odrl:Set;
     odrl:description "Alice is allowed to read collection X.";
     odrl:permission [
-        a odrl:Permission;
         odrl:assignee ex:alice;
         odrl:action odrl:read;
         odrl:target ex:collectionX

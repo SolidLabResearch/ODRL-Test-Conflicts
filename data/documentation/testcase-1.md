@@ -27,7 +27,6 @@ Alice is permitted to read resource X.
 ex:policy1a a odrl:Set;
     odrl:description "Alice is permitted to read resource X.";
     odrl:permission [
-        a odrl:Permission;
         odrl:assignee ex:alice;
         odrl:action odrl:read;
         odrl:target ex:resourceX ].
@@ -50,7 +49,6 @@ Alice is prohibited to read resource X.
 ex:policy1b a odrl:Set;
     odrl:description "Alice is prohibited to read resource X.";
     odrl:prohibition [
-        a odrl:Prohibition;
         odrl:assignee ex:alice;
         odrl:action odrl:read;
         odrl:target ex:resourceX ].

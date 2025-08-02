@@ -27,7 +27,6 @@ Alice is permitted to read resource X in 2025.
 ex:policy9a a odrl:Set;
     odrl:description "Alice is permitted to read resource X in 2025.";
     odrl:permission [
-        a odrl:Permission;
         odrl:assignee ex:alice;
         odrl:action odrl:read;
         odrl:target ex:resourceX;
@@ -65,7 +64,6 @@ Alice is not allowed to read resource X before 2026.
 ex:policy9b a odrl:Set;
     odrl:description "Alice is not allowed to read resource X before 2026.";
     odrl:prohibition [
-        a odrl:Prohibition ;
         odrl:assignee ex:alice;
         odrl:action odrl:read;
         odrl:target ex:resourceX;

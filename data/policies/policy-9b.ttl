@@ -10,7 +10,6 @@
 ex:policy9b a odrl:Set;
     odrl:description "Alice is not allowed to read resource X before 2026.";
     odrl:prohibition [
-        a odrl:Prohibition ;
         odrl:assignee ex:alice;
         odrl:action odrl:read;
         odrl:target ex:resourceX;

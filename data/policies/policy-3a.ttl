@@ -10,7 +10,6 @@
 ex:policy3a a odrl:Set;
     odrl:description "Alice has the obligation to read resource X.";
     odrl:obligation [ 
-        a odrl:Duty;
         odrl:assignee ex:alice;
         odrl:action odrl:read;
         odrl:target ex:resourceX ].

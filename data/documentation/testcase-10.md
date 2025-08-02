@@ -30,7 +30,6 @@ ex:alice
 ex:policy10a a odrl:Set;
     odrl:description "Alice is allowed to read if she is a student or an employee.";
     odrl:permission [
-        a odrl:Permission ;
         odrl:assignee ex:alice;
         odrl:action odrl:read;
         odrl:target ex:resourceX;
@@ -41,7 +40,6 @@ ex:policy10a a odrl:Set;
             odrl:rightOperand ex:student
         ]
     ] , [
-        a odrl:Permission ;
         odrl:assignee ex:alice;
         odrl:action odrl:read;
         odrl:target ex:resourceX;
@@ -71,7 +69,6 @@ Alice is prohibited to read if she is both a student and employee.
 ex:policy10b a odrl:Set;
     odrl:description "Alice is prohibited to read if she is both a student and employee.";
     odrl:prohibition [
-        a odrl:Prohibition ;
         odrl:assignee ex:alice;
         odrl:action odrl:read;
         odrl:target ex:resourceX;

@@ -27,7 +27,6 @@ Alice is allowed to rent collection X.
 ex:policy8a a odrl:Set;
     odrl:description "Alice is allowed to rent collection X.";
     odrl:permission [
-        a odrl:Permission;
         odrl:assignee ex:alice;
         odrl:action ex:rent;
         odrl:target ex:collectionX
@@ -51,7 +50,6 @@ Alice is allowed to sell collection X.
 ex:policy8b a odrl:Set;
     odrl:description "Alice is allowed to sell collection X.";
     odrl:permission [
-        a odrl:Permission;
         odrl:assignee ex:alice;
         odrl:action ex:sell;
         odrl:target ex:collectionX
@@ -88,7 +86,6 @@ ex:rentsell a owl:Class ;
 ex:policy8c a odrl:Set;
     odrl:description "Alice is prohibited to rent and sell collection X.";
     odrl:prohibition [
-        a odrl:Prohibition;
         odrl:assignee ex:alice;
         odrl:action ex:rentsell;
         odrl:target ex:collectionX
