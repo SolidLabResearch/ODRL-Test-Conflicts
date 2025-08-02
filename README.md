@@ -6,7 +6,7 @@ Using [ODRL Vocabulary & Expression 2.2](https://www.w3.org/TR/odrl-vocab/).
 
 See [documentation](https://github.com/SolidLabResearch/ODRL-Test-Conflicts/tree/main/data/documentation) for an overview of the test cases.
 
-See [quiz](https://github.com/SolidLabResearch/ODRL-Test-Conflicts/tree/main/data/documentation) for a (growing) collection of deontic quizzes for which no hints are provided.
+See [quiz](https://github.com/SolidLabResearch/ODRL-Test-Conflicts/tree/main/quiz) for a (growing) collection of deontic quizzes for which no hints are provided.
 
 ## Dependencies
 
