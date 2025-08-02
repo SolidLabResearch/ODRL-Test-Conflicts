@@ -9,13 +9,13 @@
 
 ex:quiz5a a odrl:Set;
     odrl:permission [
-        odrl:assignee ex:bob;
+        odrl:assignee <http://example.org/x/bob>;
         odrl:action odrl:read;
         odrl:target <http://uni.edu/allowed/use/file.txt> ].
 
 ex:quiz5b a odrl:Set;
     odrl:prohibition [
-        odrl:assignee ex:alice;
+        odrl:assignee ex:bob;
         odrl:action odrl:read;
         odrl:target <http://uni.edu/allowed/use/file.txt> ].
 

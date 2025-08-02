@@ -1,4 +1,5 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix odrl: <http://www.w3.org/ns/odrl/2/>.
 @prefix ex: <http://example.org/demo/>.
 @prefix temp: <http://example.com/request/>.
@@ -7,19 +8,23 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix report: <https://w3id.org/force/compliance-report#>.
 
-ex:quiz5a a odrl:Set;
+ex:notUse 
+    a odrl:Action ;
+    rdfs:subClassOf odrl:use .
+
+ex:quiz6a a odrl:Set;
     odrl:permission [
         odrl:assignee ex:bob;
-        odrl:action odrl:read;
+        odrl:action ex:notUse;
         odrl:target <http://uni.edu/allowed/use/file.txt> ].
 
-ex:quiz5b a odrl:Set;
+ex:quiz6b a odrl:Set;
     odrl:prohibition [
         odrl:assignee ex:alice;
         odrl:action odrl:read;
         odrl:target <http://uni.edu/allowed/use/file.txt> ].
 
-ex:quiz5c a odrl:Set;
+ex:quiz6c a odrl:Set;
     odrl:prohibition [
         odrl:assignee <http://example.org/bob>;
         odrl:action odrl:use;
