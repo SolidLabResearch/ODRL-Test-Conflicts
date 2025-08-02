@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix odrl: <http://www.w3.org/ns/odrl/2/>.
+@prefix ex: <http://example.org/>.
+@prefix temp: <http://example.com/request/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix report: <https://w3id.org/force/compliance-report#>.
+
+ex:quiz3a a odrl:Set;
+    dct:description "This policy forbids bob to read file.txt";
+    odrl:permission [
+        odrl:assignee ex:alice;
+        odrl:action odrl:use;
+        odrl:target <http://uni.edu/forbidden/use/file.txt> ].
+
+ex:quiz3b a odrl:Set;
+    odrl:description "This policy forbids bob to read file.txt";
+    odrl:prohibition [
+        odrl:assignee ex:alice;
+        odrl:action odrl:read;
+        odrl:target <http://uni.edu/allowed/use/file.txt> ].
+
+ex:quiz3c a odrl:Set;
+    odrl:permission [
+        odrl:assignee ex:alice;
+        odrl:action odrl:read;
+        odrl:target <http://uni.edu/allowed/use/file.txt> ].
+
