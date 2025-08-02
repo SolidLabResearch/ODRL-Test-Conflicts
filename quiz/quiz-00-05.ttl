@@ -7,19 +7,19 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix report: <https://w3id.org/force/compliance-report#>.
 
-ex:quiz5a a odrl:Set;
+ex:quiz-00-05a a odrl:Set;
     odrl:permission [
         odrl:assignee <http://example.org/x/bob>;
         odrl:action odrl:read;
         odrl:target <http://uni.edu/allowed/use/file.txt> ].
 
-ex:quiz5b a odrl:Set;
+ex:quiz-00-05b a odrl:Set;
     odrl:prohibition [
         odrl:assignee ex:bob;
         odrl:action odrl:read;
         odrl:target <http://uni.edu/allowed/use/file.txt> ].
 
-ex:quiz5c a odrl:Set;
+ex:quiz-00-05c a odrl:Set;
     odrl:prohibition [
         odrl:assignee <http://example.org/bob>;
         odrl:action odrl:use;

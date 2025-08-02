@@ -12,19 +12,19 @@ ex:notUse
     a odrl:Action ;
     rdfs:subClassOf odrl:use .
 
-ex:quiz6a a odrl:Set;
+ex:quiz-00-06a a odrl:Set;
     odrl:permission [
         odrl:assignee ex:bob;
         odrl:action ex:notUse;
         odrl:target <http://uni.edu/allowed/use/file.txt> ].
 
-ex:quiz6b a odrl:Set;
+ex:quiz-00-06b a odrl:Set;
     odrl:prohibition [
         odrl:assignee ex:alice;
         odrl:action odrl:read;
         odrl:target <http://uni.edu/allowed/use/file.txt> ].
 
-ex:quiz6c a odrl:Set;
+ex:quiz-00-06c a odrl:Set;
     odrl:prohibition [
         odrl:assignee <http://example.org/bob>;
         odrl:action odrl:use;

@@ -7,19 +7,19 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix report: <https://w3id.org/force/compliance-report#>.
 
-ex:quiz9a a odrl:Set;
+ex:quiz-00-09a a odrl:Set;
     odrl:prohibition [ 
         odrl:assignee ex:alice;
         odrl:action odrl:sell;
         odrl:target ex:resourceX ].
 
-ex:quiz9b a odrl:Set;
+ex:quiz-00-09b a odrl:Set;
     odrl:obligation [ 
         odrl:assignee ex:alice;
         odrl:action ex:append;
         odrl:target ex:resourceX ].
     
-ex:quiz9c a odrl:Set;
+ex:quiz-00-09c a odrl:Set;
     odrl:prohibition [
         odrl:assignee ex:alice;
         odrl:action odrl:use;

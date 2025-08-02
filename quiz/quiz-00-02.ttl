@@ -7,14 +7,14 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix report: <https://w3id.org/force/compliance-report#>.
 
-ex:quiz2a a odrl:Set;
+ex:quiz-00-02a a odrl:Set;
     dct:description "This policy forbids bob to read file.txt";
     odrl:permission [
         odrl:assignee ex:alice;
         odrl:action odrl:use;
         odrl:target <http://uni.edu/forbidden/use/file.txt> ].
 
-ex:quiz2b a odrl:Set;
+ex:quiz-00-02b a odrl:Set;
     odrl:description "This policy forbids bob to read file.txt";
     odrl:prohibition [
         odrl:assignee ex:alice;
