@@ -1,5 +1,5 @@
 # Permission with refinement. Obligation with conflicting refinement
-Source: data/test_case/testcase-11.ttl
+Source: ./data/test_case/testcase-11.ttl
 
  The challenge is to detect the conflict between a permission to pay with a refinement to pay more than 10 euro and the obligation to pay with a refinement to pay less than 10 euro for a resource.<br> Why is this a conflict? Due to deontic logic an obligation to pay < 10 euro entails a prohibition pay > 10 euro. This is in conflict with a permission to pay > 10 euro. 
 

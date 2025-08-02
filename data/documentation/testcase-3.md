@@ -1,7 +1,7 @@
 # Obligation vs Prohibition.
 Source: ./data/test_case/testcase-3.ttl
 
- The challenge is to detect that the obligation is a direct conflict of the prohibition. 
+ The challenge is to detect that the obligation is a direct conflict of the prohibition. This makes use of the simplest deontic logic, system D, in which Obl(X)->Perm(X) (and Proh(X) =def not(Perm(X))) 
 
 
 ## Expected Result 
@@ -75,7 +75,8 @@ ex:policy3b a odrl:Set;
     dct:title "Obligation vs Prohibition.";
     dct:description """
 The challenge is to detect that the obligation is a direct conflict
-of the prohibition.
+of the prohibition. This makes use of the simplest deontic logic,
+system D, in which Obl(X)->Perm(X) (and Proh(X) =def not(Perm(X)))
 """
 ].
 
