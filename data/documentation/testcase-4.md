@@ -1,7 +1,7 @@
 # A duty which is prohibited to be fulfilled.
 Source: ./data/test_case/testcase-4.ttl
 
- The challenge is to detect that the duty that is required for a permission is prohibited. 
+ The challenge is to detect that the duty that is required for a permission is prohibited. This makes use of the simplest deontic logic, system D, in which Obl(X)->Perm(X). 
 
 
 ## Expected Result 
@@ -79,7 +79,8 @@ ex:policy4b a odrl:Set;
     dct:title "A duty which is prohibited to be fulfilled.";
     dct:description """
 The challenge is to detect that the duty that is required for a 
-permission is prohibited.
+permission is prohibited. This makes use of the simplest deontic logic,
+system D, in which Obl(X)->Perm(X).
 """
 ].
 
