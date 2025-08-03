@@ -3,7 +3,7 @@
 const fs = require('fs');
 const c = require('ansi-colors');
 
-const answerFile = './quiz/answers.txt';
+const answerFile = './.answers';
 
 const answers = Object.fromEntries(
                     fs.readFileSync(answerFile,'utf-8').split("\n").filter( x => x.trim() !== "").map(x => x.split(/\s+/g))
