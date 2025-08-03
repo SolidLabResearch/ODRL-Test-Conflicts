@@ -32,6 +32,6 @@ ex:quiz-01-02b a odrl:Set;
         odrl:constraint [
             odrl:leftOperand odrl:purpose;
             odrl:operator odrl:neq;
-            odrl:rightOperand ex:CommercialPurpose
+            odrl:rightOperand ex:EducationalPurpose
         ]
     ].

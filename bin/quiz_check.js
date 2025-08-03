@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 const fs = require('fs');
+const c = require('ansi-colors');
 
 const answerFile = './quiz/answers.txt';
 
@@ -43,9 +44,15 @@ reportLines.forEach(line => {
            ok = true;
            score++;
         }
-        console.log(`${quiz} ${answer} -> ${ok}`);
+
+        if (ok) {
+            console.log(`${quiz} expect ${answers[quiz]} got ${answer} -> ` + c.green(ok));
+        }
+        else {
+            console.log(c.cyan(quiz) + ` expect ` + c.green(answers[quiz]) + ` got ` + c.yellow(answer) + ` -> ` + c.red(ok));
+        }
         read = false;
     }
 });
 
-console.log("Score: " + (100*score/Object.keys(answers).length) + "%");
+console.log("\nScore: " + c.bold(100*score/Object.keys(answers).length) + "%");
