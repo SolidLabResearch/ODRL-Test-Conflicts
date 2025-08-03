@@ -1,4 +1,4 @@
 node_modules
-quiz/answers.txt
 implementations/**
 etc/**
+.env
