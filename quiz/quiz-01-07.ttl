@@ -28,6 +28,6 @@ ex:quiz-01-07b a odrl:Set;
         odrl:constraint [
             odrl:leftOperand odrl:purpose;
             odrl:operator odrl:isAnyOf;
-            odrl:rightOperand ( ex:CommercialPurpose ex:EducationalPurpose ex:DefensePurpose )
+            odrl:rightOperand ( ex:CommercialPurpose ex:DefensePurpose )
         ]
     ].
