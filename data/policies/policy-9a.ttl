@@ -15,16 +15,20 @@ ex:policy9a a odrl:Set;
         odrl:target ex:resourceX;
         odrl:constraint [
             a odrl:LogicalConstraint;
-            odrl:and [
-                a odrl:Constraint;
-                odrl:leftOperand odrl:dateTime;
-                odrl:operator odrl:gteq;
-                odrl:rightOperand "2025-01-01"^^xsd:date
-            ] , [
-                a odrl:Constraint;
-                odrl:leftOperand odrl:dateTime ;
-                odrl:operator odrl:lteq;
-                odrl:rightOperand "2025-12-31"^^xsd:date
-            ]  
+            odrl:and (
+                [
+                    a odrl:Constraint;
+                    odrl:leftOperand odrl:dateTime;
+                    odrl:operator odrl:gteq;
+                    odrl:rightOperand "2025-01-01"^^xsd:date
+                ]
+
+                [
+                    a odrl:Constraint;
+                    odrl:leftOperand odrl:dateTime ;
+                    odrl:operator odrl:lteq;
+                    odrl:rightOperand "2025-12-31"^^xsd:date
+                ]  
+            )
         ]
     ].

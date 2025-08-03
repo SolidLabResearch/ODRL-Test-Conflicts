@@ -74,17 +74,21 @@ ex:policy10b a odrl:Set;
         odrl:target ex:resourceX;
         odrl:constraint [
             a odrl:LogicalConstraint;
-            odrl:and [
-                a odrl:Constraint;
-                odrl:leftOperand odrl:recipient ;
-                odrl:operator odrl:isA;
-                odrl:rightOperand ex:student
-             ], [
-                a odrl:Constraint;
-                odrl:leftOperand odrl:recipient ;
-                odrl:operator odrl:isA;
-                odrl:rightOperand ex:employee
-             ]
+            odrl:and (
+                [
+                    a odrl:Constraint;
+                    odrl:leftOperand odrl:recipient ;
+                    odrl:operator odrl:isA;
+                    odrl:rightOperand ex:student
+                ]
+                
+                [
+                    a odrl:Constraint;
+                    odrl:leftOperand odrl:recipient ;
+                    odrl:operator odrl:isA;
+                    odrl:rightOperand ex:employee
+                ]
+            )
         ]
     ].
 ```
