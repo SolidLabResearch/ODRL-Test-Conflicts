@@ -19,13 +19,13 @@ ex:quiz-02-03a a odrl:Set;
                 [
                     odrl:leftOperand odrl:dateTime;
                     odrl:operator odrl:eq;
-                    odrl:rightOperand "2026-01-01"^^xsd:date
+                    odrl:rightOperand "2026-01-11"^^xsd:date
                 ]
                 
                 [
                     odrl:leftOperand odrl:dateTime;
                     odrl:operator odrl:eq;
-                    odrl:rightOperand "2026-02-01"^^xsd:date
+                    odrl:rightOperand "2026-01-12"^^xsd:date
                 ]
             )
         ]
@@ -41,13 +41,13 @@ ex:quiz-02-03b a odrl:Set;
             odrl:and (
                 [
                     odrl:leftOperand odrl:dateTime;
-                    odrl:operator odrl:gteq;
+                    odrl:operator odrl:lteq;
                     odrl:rightOperand "2026-01-20"^^xsd:date
                 ]
 
                 [
                     odrl:leftOperand odrl:dateTime;
-                    odrl:operator odrl:lteq;
+                    odrl:operator odrl:gteq;
                     odrl:rightOperand "2026-01-10"^^xsd:date
                 ]
             )
