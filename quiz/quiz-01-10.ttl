@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix odrl: <http://www.w3.org/ns/odrl/2/>.
+@prefix ex: <http://example.org/>.
+@prefix temp: <http://example.com/request/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix report: <https://w3id.org/force/compliance-report#>.
+
+ex:quiz-01-10a a odrl:Set;
+    odrl:permission [
+        odrl:assignee ex:alice;
+        odrl:action odrl:distribute;
+        odrl:target ex:resourceX;
+        odrl:constraint [
+            odrl:leftOperand odrl:dateTime;
+            odrl:operator odrl:gteq;
+            odrl:rightOperand "2026-01-01"^^xsd:date
+        ]
+    ].
+
+ex:quiz-01-10b a odrl:Set;
+    odrl:permission [
+        odrl:assignee ex:alice;
+        odrl:action odrl:distribute;
+        odrl:target ex:resourceX;
+        odrl:constraint [
+            odrl:leftOperand odrl:dateTime;
+            odrl:operator odrl:lt;
+            odrl:rightOperand "2026-05-05"^^xsd:date
+        ]
+    ].
+
+ex:quiz-01-10c a odrl:Set;
+    odrl:permission [
+        odrl:assignee ex:alice;
+        odrl:action odrl:distribute;
+        odrl:target ex:resourceX;
+        odrl:constraint [
+            odrl:leftOperand odrl:dateTime;
+            odrl:operator odrl:eq;
+            odrl:rightOperand "2026-06-01"^^xsd:date
+        ]
+    ].
+
+ex:quiz-01-10d a odrl:Set;
+    odrl:prohibited [
+        odrl:assignee ex:alice;
+        odrl:action odrl:distribute;
+        odrl:target ex:resourceX;
+        odrl:constraint [
+            odrl:leftOperand odrl:dateTime;
+            odrl:operator odrl:lteq;
+            odrl:rightOperand "2026-05-05"^^xsd:date
+        ]
+    ].
+
+ex:quiz-01-10e a odrl:Set;
+    odrl:prohibited [
+        odrl:assignee ex:alice;
+        odrl:action odrl:distribute;
+        odrl:target ex:resourceX;
+        odrl:constraint [
+            odrl:leftOperand odrl:dateTime;
+            odrl:operator odrl:gt;
+            odrl:rightOperand "2026-07-01"^^xsd:date
+        ]
+    ].
