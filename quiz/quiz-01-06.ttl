@@ -16,7 +16,7 @@ ex:quiz-01-06a a odrl:Set;
         odrl:constraint [
             odrl:leftOperand odrl:purpose;
             odrl:operator odrl:isAllOf;
-            odrl:rightOperand ( ex:DefensePurposePurpose ex:CommercialPurpose )
+            odrl:rightOperand ( ex:DefensePurpose ex:CommercialPurpose )
         ]
     ].
 

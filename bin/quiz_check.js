@@ -35,19 +35,24 @@ async function main() {
             return;
         }
         if (read) {
-            if (line.match(/.*CONFLICT/)) {
-            answer = 'Conflict';
+            if (line.match(/No conflict/)) {
+                answer = 'NonConflict';
             }
-            else if (line.match(/No conflict/)) {
-            answer = 'NonConflict';
+            else if (line.match(/Conflict/i)) {
+                answer = 'Conflict';
+            }
+            else if (line.match(/Ambiguous/)) {
+                answer = 'Ambiguous';
             }
             else {
-            answer = 'Unknown';
+                answer = 'Unknown';
             }
+
             let ok = false;
+
             if (answers[quiz] === answer) {
-            ok = true;
-            score++;
+                ok = true;
+                score++;
             }
 
             if (ok) {
