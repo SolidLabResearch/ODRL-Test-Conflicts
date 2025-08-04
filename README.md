@@ -23,6 +23,6 @@ npm install
 ## Conflicts
 
 - `NonConflict` : no conflict found
-- `Conflict` : rules that contradict eachother
+- `Conflict` : rules that contradict each other
 - `Ambiguous` : rules that permit an action in one state of the world but deny it in another
 - `Underspecified` : rules that never will trigger
