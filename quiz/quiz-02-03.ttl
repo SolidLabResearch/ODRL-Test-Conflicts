@@ -15,24 +15,24 @@ ex:quiz-02-03a a odrl:Set;
         odrl:target ex:resourceX;
         odrl:constraint [
             a odrl:LogicalConstraint ;
-            odrl:xone (
+            odrl:and (
+                [
+                    odrl:leftOperand odrl:purpose;
+                    odrl:operator odrl:eq;
+                    odrl:rightOperand ex:EducationalPurpose
+                ] 
+
                 [
                     odrl:leftOperand odrl:dateTime;
-                    odrl:operator odrl:eq;
-                    odrl:rightOperand "2026-01-11"^^xsd:date
-                ]
-                
-                [
-                    odrl:leftOperand odrl:dateTime;
-                    odrl:operator odrl:eq;
-                    odrl:rightOperand "2026-01-12"^^xsd:date
+                    odrl:operator odrl:lt;
+                    odrl:rightOperand "2026-01-01"^^xsd:date
                 ]
             )
         ]
     ].
 
 ex:quiz-02-03b a odrl:Set;
-    odrl:prohibited [
+    odrl:prohibition [
         odrl:assignee ex:alice;
         odrl:action odrl:use;
         odrl:target ex:resourceX;
@@ -40,15 +40,15 @@ ex:quiz-02-03b a odrl:Set;
             a odrl:LogicalConstraint ;
             odrl:and (
                 [
-                    odrl:leftOperand odrl:dateTime;
-                    odrl:operator odrl:lteq;
-                    odrl:rightOperand "2026-01-20"^^xsd:date
+                    odrl:leftOperand odrl:purpose;
+                    odrl:operator odrl:isAnyOf;
+                    odrl:rightOperand ( ex:EducationalPurpose )
                 ]
 
                 [
                     odrl:leftOperand odrl:dateTime;
-                    odrl:operator odrl:gteq;
-                    odrl:rightOperand "2026-01-10"^^xsd:date
+                    odrl:operator odrl:lt;
+                    odrl:rightOperand "2027-01-01"^^xsd:date
                 ]
             )
         ]

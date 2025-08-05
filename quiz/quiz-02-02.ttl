@@ -19,7 +19,7 @@ ex:quiz-02-02a a odrl:Set;
                 [
                     odrl:leftOperand odrl:purpose;
                     odrl:operator odrl:eq;
-                    odrl:rightOperand odrl:EducationalPurpose
+                    odrl:rightOperand ex:EducationalPurpose
                 ] 
 
                 [
@@ -32,7 +32,7 @@ ex:quiz-02-02a a odrl:Set;
     ].
 
 ex:quiz-02-02b a odrl:Set;
-    odrl:prohibited [
+    odrl:prohibition [
         odrl:assignee ex:alice;
         odrl:action odrl:use;
         odrl:target ex:resourceX;

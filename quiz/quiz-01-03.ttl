@@ -24,7 +24,7 @@ ex:quiz-01-03a a odrl:Set;
     ].
 
 ex:quiz-01-03b a odrl:Set;
-    odrl:prohibited [
+    odrl:prohibition [
         odrl:assignee ex:alice;
         odrl:action odrl:use;
         odrl:target ex:resourceX;

@@ -15,11 +15,11 @@ ex:quiz-02-01a a odrl:Set;
         odrl:target ex:resourceX;
         odrl:constraint [
             a odrl:LogicalConstraint ;
-            odrl:and (
+            odrl:or (
                 [
                     odrl:leftOperand odrl:purpose;
                     odrl:operator odrl:eq;
-                    odrl:rightOperand odrl:CommercialPurpose
+                    odrl:rightOperand ex:CommercialPurpose
                 ] 
 
                 [
@@ -32,24 +32,13 @@ ex:quiz-02-01a a odrl:Set;
     ].
 
 ex:quiz-02-01b a odrl:Set;
-    odrl:prohibited [
+    odrl:prohibition [
         odrl:assignee ex:alice;
         odrl:action odrl:use;
         odrl:target ex:resourceX;
         odrl:constraint [
-            a odrl:LogicalConstraint ;
-            odrl:or (
-                [
-                    odrl:leftOperand odrl:purpose;
-                    odrl:operator odrl:isAnyOf;
-                    odrl:rightOperand ( ex:DefensePurpose ex:CommercialPurpose )
-                ]
-
-                [
-                    odrl:leftOperand odrl:dateTime;
-                    odrl:operator odrl:gt;
-                    odrl:rightOperand "2027-01-01"^^xsd:date
-                ]
-            )
+            odrl:leftOperand odrl:purpose;
+            odrl:operator odrl:isAnyOf;
+            odrl:rightOperand ( ex:DefensePurpose ex:CommercialPurpose )
         ]
     ].
