@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix odrl: <http://www.w3.org/ns/odrl/2/>.
+@prefix ex: <http://example.org/>.
+@prefix temp: <http://example.com/request/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix report: <https://w3id.org/force/compliance-report#>.
+
+ex:quiz-02-04a a odrl:Set;
+    odrl:permission [
+        odrl:assignee ex:alice;
+        odrl:action odrl:use;
+        odrl:target ex:resourceX;
+        odrl:constraint [
+            a odrl:LogicalConstraint ;
+            odrl:xone (
+                [
+                    odrl:leftOperand odrl:purpose;
+                    odrl:operator odrl:eq;
+                    odrl:rightOperand ex:EducationalPurpose
+                ] 
+
+                [
+                    odrl:leftOperand odrl:dateTime;
+                    odrl:operator odrl:lt;
+                    odrl:rightOperand "2026-01-01"^^xsd:date
+                ]
+            )
+        ]
+    ].
+
+ex:quiz-02-04b a odrl:Set;
+    odrl:prohibition [
+        odrl:assignee ex:alice;
+        odrl:action odrl:use;
+        odrl:target ex:resourceX;
+        odrl:constraint [
+            a odrl:LogicalConstraint ;
+            odrl:and (
+                [
+                    odrl:leftOperand odrl:purpose;
+                    odrl:operator odrl:isAnyOf;
+                    odrl:rightOperand ( ex:EducationalPurpose )
+                ]
+
+                [
+                    odrl:leftOperand odrl:dateTime;
+                    odrl:operator odrl:lt;
+                    odrl:rightOperand "2027-01-01"^^xsd:date
+                ]
+            )
+        ]
+    ].
